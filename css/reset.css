@@ -1,0 +1,63 @@
+* {margin: 0; padding: 0}
+html, body {width: 100%; height: 100%; margin: 0px; padding: 0px; overflow: hidden; font-family: 'Noto Sans';}
+ul, ol {list-style: none}
+a{text-decoration: none; color: #000;}
+img{max-width: 100%;}
+.clearfix {*zoom: 1;}
+.clearfix::after {content: ""; display: block; clear: both;}
+
+.f10{font-size: 10px;}
+.f15{font-size: 15px;}
+.f20{font-size: 20px;}
+.f25{font-size: 25px;}
+.f30{font-size: 30px;}
+.f35{font-size: 35px;}
+.f40{font-size: 40px;}
+.f45{font-size: 45px;}
+.f50{font-size: 50px;}
+.f55{font-size: 55px;}
+.f60{font-size: 60px;}
+.f65{font-size: 65px;}
+.f70{font-size: 70px;}
+.f75{font-size: 75px;}
+.f80{font-size: 80px;}
+.f85{font-size: 85px;}
+
+.main-title{font-weight: 900; color: #000;}
+.sub-title{font-weight: 700; color: #000;}
+
+.header{width: 100%; position: fixed; width: 100%; z-index: 1000;}
+.header h1{font-size: 0; padding-top: 50px; padding-left: 50px;}
+/*토글메뉴*/
+#toggle {position: absolute; top: 30px; right: 30px; width: 30px; height: 21px; cursor: pointer; z-index: 1000; padding-right: 35px; padding-top: 35px;}
+#toggle div.bar, #toggle div.bar:before, #toggle div.bar:after {width: 100%; height: 3px; background: #333;}
+#toggle div.bar {position: relative; transform: translateY(9px); transition: all 0.3s 0.3s ease;}
+#toggle div.bar:before {content: " "; position: absolute; bottom: 9px; transition: bottom 0.3s 0.3s ease, transform 0.3s ease;}
+#toggle div.bar:after {content: " "; position: absolute; top: 9px; transition: top 0.3s 0.3s ease, transform 0.3s ease;}
+
+/* 토글 Animation */
+#toggle div.bar.animate {background: rgba(255, 255, 255, 0);}
+#toggle div.bar.animate:after {top: 0; transform: rotate(45deg); transition: top 0.3s ease, transform 0.3s 0.3s ease;}
+#toggle div.bar.animate:before {bottom: 0; transform: rotate(-45deg); transition: bottom 0.3s ease, transform 0.3s 0.3s ease;}
+#overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 0; overflow: hidden; transition: all 0.3s ease, max-height 0s 0.6s ease; z-index: 100; opacity: 1; background: #f5f5f5;}
+#overlay nav {padding-top: 200px; padding-left: 200px;}
+#overlay nav ul, #overlay nav ul li {margin: 0; padding: 0; display: block; position: static;}
+#overlay nav ul li {opacity: 0; transition: all 0.9s 0s ease; margin-left: 60px;}
+#overlay nav ul li a {position: relative; height: 70px; display: inline-block;text-transform: normal; font-size: 50px; font-weight: 700; color: #000000; text-decoration: none; transition: all 0.6s 0s ease;}
+#overlay nav ul li a:after {content: " "; position: absolute; left: 0; bottom: 0; width: 0; opacity: 0; height: 1px; background: white; transition: all 0.6s 0s ease;}
+#overlay nav ul li a:hover:after {width: 100%; opacity: 1;}
+#overlay nav ul li a:hover {color: #888888;}
+#overlay .company-info{padding-left: 200px; padding-top: 152px;}
+#overlay .company-info-wrap{position: relative; opacity: 0; transition: all 0.9s 0s ease;}
+#overlay .company-info-wrap .location{margin-top: 30px;}
+#overlay .company-info-wrap .copy{font-size: 10px; position: absolute; bottom: -60px;}
+#menu-page.overlay #overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 1200px; opacity: 1; z-index: 100; transition: all 0.3s ease;}
+#menu-page.overlay #overlay nav ul li {margin-left: 0; opacity: 1;}
+#menu-page.overlay #overlay nav ul li:nth-child(1) {transition: all 0.9s 0.6s ease;}
+#menu-page.overlay #overlay nav ul li:nth-child(2) {transition: all 0.9s 0.8s ease;}
+#menu-page.overlay #overlay nav ul li:nth-child(3) {transition: all 0.9s 1.0s ease;}
+#menu-page.overlay #overlay nav ul li:nth-child(4) {transition: all 0.9s 1.2s ease;}
+#menu-page.overlay #overlay nav ul li:nth-child(5) {transition: all 0.9s 1.4s ease;}
+#menu-page.overlay #overlay .company-info-wrap{opacity: 1; transition: all 0.9s 1.8s ease;}
+#menu-page.overlay #overlay .company-info .tel p{display: block; font-size: 16px; color: #000; font-weight: 500; opacity: 1; transition: all 0.9s 0.6s ease;}
+#menu-page.overlay #overlay .company-info address{font-style: normal; font-weight: 500; margin-top: 30px;}
