@@ -1,0 +1,21 @@
+#about-page{width: 100%; height: auto; position: relative;}
+.inner{width: 1200px; height: 100%; margin: 0px auto 50px; padding-top: 200px;}
+.top-con{margin-bottom: 200px;}
+.top-con .main-title{margin-bottom: 90px;}
+.top-con .sub-title{margin-bottom: 90px;}
+.top-con .main-txt{position: relative; padding-left: 50px;}
+.top-con .main-txt:before{content: ''; width: 3px; height: 100%; background: #000; position: absolute; left: 0;}
+
+.mid-con{margin-bottom: 200px;}
+.mid-con .main-title{margin-bottom: 90px;}
+.mid-con .sub-title{margin-bottom: 90px;}
+.mid-con > ul{display: flex; justify-content: space-between;}
+.mid-con > ul > li{padding-left: 100px;}
+.mid-con > ul > li:first-child{padding-left: 0px;}
+.mid-con > ul > li .work-tit{font-weight: 700; margin-top: 50px;}
+.mid-con > ul > li .work-txt{font-weight: 300; font-size: 18px; color: #666; margin-top: 50px;}
+
+.bot-con .main-title{margin-bottom: 90px;}
+.bot-con .sub-title{margin-bottom: 90px;}
+.bot-con > ul > li{float: left; width: calc(25% - 75px); padding-right: 100px; margin-bottom: 50px;}
+.bot-con > ul > li:nth-child(4n){padding-right: 0px;}

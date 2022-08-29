@@ -1,5 +1,5 @@
 * {margin: 0; padding: 0}
-html, body {width: 100%; height: 100%; margin: 0px; padding: 0px; overflow: hidden; font-family: 'Noto Sans';}
+html, body {width: 100%; height: 100%; margin: 0px; padding: 0px; font-family: 'Noto Sans';}
 ul, ol {list-style: none}
 a{text-decoration: none; color: #000;}
 img{max-width: 100%;}
@@ -26,8 +26,18 @@ img{max-width: 100%;}
 .main-title{font-weight: 900; color: #000;}
 .sub-title{font-weight: 700; color: #000;}
 
-.header{width: 100%; position: fixed; width: 100%; z-index: 1000;}
+.header{position: fixed; width: 100%; z-index: 1000;}
 .header h1{font-size: 0; padding-top: 50px; padding-left: 50px;}
+
+.footer{width: 100%; border-top: 1px solid #222;}
+.footer p{width: 100%; text-align: center; color: #222; padding: 25px 0;}
+/*스크롤버튼*/
+.scrollbox {animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;}
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: -3px;}
+}
+
 /*토글메뉴*/
 #toggle {position: absolute; top: 30px; right: 30px; width: 30px; height: 21px; cursor: pointer; z-index: 1000; padding-right: 35px; padding-top: 35px;}
 #toggle div.bar, #toggle div.bar:before, #toggle div.bar:after {width: 100%; height: 3px; background: #333;}
