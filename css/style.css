@@ -6,9 +6,17 @@ body{overflow: hidden;}
 .quick li {width: 4px; height: 4px; margin-bottom: 16px; background: #222;; cursor: pointer; transition: all 0.8s;}
 .quick .on {background: #FB0033; height: 24px;}
 
+/*스크롤버튼*/
 .scroll-btn{position: fixed; left: 20px; bottom: 50px;}
 .scroll-btn p{display: inline-block; transform: rotate(-90deg); text-transform: uppercase; font-size: 9px; color: #222; font-weight: 700;}
-.scroll-btn i{display: inline-block; padding-left: 20px; margin-bottom: 50px; position: absolute; top: -60px; left: 10px;}
+.scroll-btn img{display: inline-block; padding-left: 20px; margin-bottom: 50px; position: absolute; top: -60px; left: 10px;}
+
+.scrollbox {animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;}
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: -3px;}
+}
+
 
 .fullsection{width: 100%; height: 937px; position: relative;}
 /*.inner{max-width: 1600px; height: 100%; margin: 0 auto; }*/
