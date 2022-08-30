@@ -23,6 +23,15 @@ img{max-width: 100%;}
 .f80{font-size: 80px;}
 .f85{font-size: 85px;}
 
+.arrow{display: inline-block; padding-bottom: 5px; margin-left: 15px; position: relative;}
+.arrow:after{width: 30px; height: 30px; content: ''; position: absolute; border-radius: 50%; border: 2px solid #000; right: -15px; top: -15px; display: inline-block; opacity: 0; transition: all 1s ease;}
+.arrow span{width: 30px; height: 2px; background: #000; position: relative; display: block; transition: all 0.4s ease;}
+.arrow span:after{position: absolute; display: block; content: ''; width: 10px; height: 2px; background: #000; right: -1px; bottom: 3px; transform: rotate(45deg);}
+.arrow span:before{position: absolute; display: block; content: ''; width: 10px; height: 2px; background: #000; right: -1px; bottom: -3px; transform: rotate(-45deg);}
+a:hover .arrow span{width: 50px;}
+a:hover .arrow:after{opacity: 1;}
+
+
 .main-title{font-weight: 900; color: #000;}
 .sub-title{font-weight: 700; color: #000;}
 
