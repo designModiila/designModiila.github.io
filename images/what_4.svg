@@ -1,9 +1,14 @@
-<svg width="52" height="39" viewBox="0 0 52 39" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="52" height="39" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_101_327" transform="scale(0.0192308 0.025641)"/>
-</pattern>
-<image id="image0_101_327" width="52" height="39" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAnCAYAAABAOmveAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDowMkJDQTBBNDBFMUYxMUVEODQ4MDgwQTA2MEVBRUZFMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDowMkJDQTBBNTBFMUYxMUVEODQ4MDgwQTA2MEVBRUZFMyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjAyQkNBMEEyMEUxRjExRUQ4NDgwODBBMDYwRUFFRkUzIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjAyQkNBMEEzMEUxRjExRUQ4NDgwODBBMDYwRUFFRkUzIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+wsJXnAAAAnpJREFUeNpiVFJSYhgkwIEcTXfv3j2AzGdhGDxgP5n6GJE5TAzDDAw7Dw2mJDcRh7goEEcNRQ8V4PDMPlJjqGEAPfEaiKcB8X88ntEh1UP1A+SZN0DsRKJn7gKx8mBMcjDPXCbBM1eAOIiNje2WvLw8WODhw4eDwkNkeSY4ONi3oaGh+P///wzc3Nxgwa9fv4KoHmi2+QKulIAtBfQo7wTiHzT00BpoaBPtGS8vL+/JkyeD9JniMPM0tKXxDZuHBIH4A51jDV8BoABs3uQD6UKYwP+7TyBNBGUZZHX9QFw0GCpWvKWZr68vKLWkwfj/crsY/qoEgDGIjQRAajiYBrNnQCAxMVENSIEzzf97Txn+TVkFlwOxYbEFVaPBNJg9gwH+/6dbW46ZSp7BKCzmz59/C1SgwfIMU3YYwvFANlI+Aqm5QY1CAeS43UDcDcRLKfQMqDh/he4eYKFQR2yhQKmHkB33D4jjCHiKkGdeY2k5gDz0C0gfBGITHOaeAWJ7ULHNRMU8ADJrERBHU+AZXOAbEDsCcR8Qf0YSB1WmvVC5b7gqVmJiCF+GxhZTpHgGWwwhu4cDiFWg7DvojQAWGpROsJhigHqKkpjBBn7gaGmQ5SFcjnsBxBJYPAWK7XRKPaOsrIxvkITsYhtfSOsBcSWWmJpMxZih6pgCMcmmA4unGOjpGWI9REoewOcpmnuGGA+Rk6GxeYouniHkIUpKJ2RP0c0zhEo5PmgpRW5Id0DVbaKXZwjF0F1oL/ApBSE9l56eISYP3YF6agc9kw2tkhyypzwZhggYHawf9dAgyEMVDLQdl6O7h8pHk9yoh2ib5IIGuRu/kqIYIMAAfOzYid3JRkgAAAAASUVORK5CYII="/>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="51px" height="39px" viewBox="0 0 51 39" enable-background="new 0 0 51 39" xml:space="preserve">
+<path fill="#222222" d="M48.15,9.125V0.57h-14v4h7.17L23.86,22.02l-6-6L6.74,27.15l2.82,2.83l8.3-8.301l6,6L36.15,15.39v19.18h-32
+	v-24h24.03l4-4H0.15v32h40V11.39l4-4v1.734c0.59-0.343,1.268-0.554,2-0.554S47.56,8.781,48.15,9.125z"/>
+<path fill="#222222" d="M46.15,14.56c-1.108,0-1.997-0.888-2-1.995c0,0.001,0,0.003,0,0.005c0,1.11,0.89,2,2,2c1.109,0,2-0.89,2-2
+	c0-0.002,0-0.003,0-0.005C48.147,13.672,47.258,14.56,46.15,14.56z"/>
+<path fill="#FB0033" d="M46.15,10.57c-1.108,0-1.997,0.887-2,1.995c0.003,1.107,0.892,1.995,2,1.995c1.107,0,1.997-0.888,2-1.995
+	C48.147,11.458,47.258,10.57,46.15,10.57z"/>
+<path fill="#FFFFFF" d="M46.15,10.56c-1.11,0-2,0.9-2,2v0.005c0.003-1.108,0.892-1.995,2-1.995c1.107,0,1.997,0.887,2,1.995V12.56
+	C48.15,11.45,47.26,10.56,46.15,10.56z"/>
 </svg>

@@ -54,12 +54,15 @@ img{max-width: 100%;}
 #overlay nav ul, #overlay nav ul li {margin: 0; padding: 0; display: block; position: static;}
 #overlay nav ul li {opacity: 0; transition: all 0.9s 0s ease; margin-left: 60px;}
 #overlay nav ul li a {position: relative; height: 70px; display: inline-block;text-transform: normal; font-size: 50px; font-weight: 700; color: #000000; text-decoration: none; transition: all 0.6s 0s ease;}
-#overlay nav ul li a:after {content: " "; position: absolute; left: 0; bottom: 0; width: 0; opacity: 0; height: 1px; background: white; transition: all 0.6s 0s ease;}
+#overlay nav ul li a:after {content: " "; position: absolute; left: 0; bottom: 0; width: 0; opacity: 0; height: 1px; background: #888888; transition: all 0.6s 0s ease;}
 #overlay nav ul li a:hover:after {width: 100%; opacity: 1;}
 #overlay nav ul li a:hover {color: #888888;}
 #overlay .company-info{padding-left: 200px; padding-top: 152px;}
 #overlay .company-info-wrap{position: relative; opacity: 0; transition: all 0.9s 0s ease;}
 #overlay .company-info-wrap .location{margin-top: 30px;}
+#overlay .company-info-wrap .location a{position: relative}
+#overlay .company-info-wrap .location a:after {content: " "; position: absolute; left: 0; bottom: 0; width: 0; opacity: 0; height: 1px; background: #000; transition: all 0.6s 0s ease;}
+#overlay .company-info-wrap .location a:hover:after {width: 100%; opacity: 1;}
 #overlay .company-info-wrap .copy{font-size: 10px; position: absolute; bottom: -60px;}
 #overlay .company-info-wrap address{margin-top: 30px;}
 #menu-page.overlay #overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 1200px; opacity: 1; z-index: 100; transition: all 0.3s ease;}
