@@ -30,9 +30,9 @@ img{max-width: 100%;}
 .header h1{font-size: 0; padding-top: 50px; padding-left: 50px;}
 
 .footer{width: 100%; border-top: 1px solid #222;}
-.footer .mfooter{float: left; width: calc(100% - 35px); text-align: center; color: #222; padding: 25px 0; display: inline-block;}
+.footer .mfooter{float: left; width: calc(100% - 65px); text-align: center; color: #222; padding: 25px 0; display: block;}
 .footer .mfooter span{display: inline-block;}
-.footer .icon-top-arrow{float: right; padding-top: 15px; display: inline-block;}
+.footer img{float: right; padding: 15px 15px 0; display: block;}
 
 /*토글메뉴*/
 #toggle {position: absolute; top: 30px; right: 30px; width: 30px; height: 21px; cursor: pointer; z-index: 1000; padding-right: 35px; padding-top: 35px;}

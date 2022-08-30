@@ -91,3 +91,27 @@ $(function () {
     $('#menu-page').toggleClass('overlay');
   });
 });
+
+//문의 페이지 탭메뉴
+$(function () {
+  $('.pc_tab li').first().addClass("activeClass");
+  $(".tab-contents").not(':first').hide();
+
+  $('.pc_tab li').on('click', function () {
+    $(this).addClass("activeClass").siblings().removeClass("activeClass");
+    var link = $(this).find("a").attr("href");
+    var link_num = link.substr(link.length - 1);
+    $("select#tabmenu option").eq(link_num - 1).prop("selected", "selected");
+    $(".tab-contents").hide();
+    $(link).show();
+  });
+
+  $("select#tabmenu").on("change", function () {
+    var select_link = $("select#tabmenu").val();
+    var select_num = $(this).prop('selectedIndex');
+    $('.pc_tab li').eq(select_num).addClass("activeClass").siblings().removeClass('activeClass');
+    $(".tab-contents").hide();
+    $(select_link).show();
+    console.log(select_link);
+  });
+});

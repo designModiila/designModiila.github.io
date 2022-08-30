@@ -1,0 +1,22 @@
+#request-page{width: 100%; height: auto; position: relative;}
+.inner{width: 1200px; height: 100%; margin: 0px auto 50px; padding-top: 200px;}
+.top-con{margin-bottom: 70px; background: url(../images/requestbg.png) no-repeat right bottom;}
+.top-con .main-title{margin-bottom: 90px;}
+.request-box{width: 75%; padding-left: 25%;}
+.request-tab > p{font-size: 18px; margin-bottom: 20px; color: #222;}
+.pc_tab ul{overflow: hidden; width: 100%; margin-bottom: 61px;}
+.pc_tab ul li{width: 25%; box-sizing: border-box; float: left; list-style-type: none; border: 1px solid #ccc; text-align: center; line-height: 40px;}
+.pc_tab ul li a{color: #666; font-size: 16px; display: block; position: relative; padding-left: 20px;}
+.pc_tab ul li a:before{color: #666; display: block; position: absolute; content: ''; background: url(../images/icon-check-off.png) no-repeat; width: 14px; height: 11px; left: 80px; top: 50%; transform: translateY(-50%);}
+.pc_tab ul li.activeClass{border: 1px solid #222;}
+.pc_tab ul li.activeClass a{color: #222;}
+.pc_tab ul li.activeClass a:before{width: 18px; height: 19px; background: url(../images/icon-check-on.png) no-repeat;}
+.m_tab {display: none;}
+.m_tab select {width:100%; height: 50px; }
+
+@media (max-width:780px){
+    .m_tab {display: block;}
+    .pc_tab{display: none;}
+}
+
+

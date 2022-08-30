@@ -1,0 +1,20 @@
+#recruit-page{width: 100%; height: auto; position: relative;}
+.top-bg{position: absolute; right: 0; top: 20%;}
+.inner{width: 1200px; height: 100%; margin: 0px auto 50px; padding-top: 200px;}
+.top-con{margin-bottom: 200px;}
+.top-con .main-title{margin-bottom: 90px;}
+.top-con .sub-title{margin-bottom: 90px;}
+.top-con .main-txt{position: relative; padding-left: 50px;}
+.top-con .main-txt:before{content: ''; width: 3px; height: 100%; background: #000; position: absolute; left: 0;}
+
+.go-box{padding-top: 40px;}
+.go-box a{display: block; font-size: 20px; font-weight: 700; margin-bottom: 10px;}
+
+.bot-con{margin-bottom: 200px;}
+.bot-con .main-title{margin-bottom: 90px;}
+.bot-con .sub-title{margin-bottom: 200px;}
+.bot-con > ul{margin-bottom: 80px;}
+.bot-con > ul > li{width: calc(25% - 80px); float: left; padding-left: 100px;}
+.bot-con > ul > li:first-child{padding-left: 0px;}
+.bot-con > ul > li .work-tit{font-weight: 700; margin-top: 50px;}
+.bot-con > ul > li .work-txt{font-weight: 300; font-size: 18px; color: #666; margin-top: 50px;}
