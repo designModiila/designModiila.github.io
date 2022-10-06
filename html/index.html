@@ -6,11 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MODIILA</title>
-  <link rel="stylesheet" href="../css/font-face.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/style.css">
-  <script src="../js/jquery-1.12.4.js"></script>
-  <script src="../js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/font-face.css">
+  <link rel="stylesheet" type="text/css" href="../css/reset.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../js/fullpage.min.js"></script>
+  <script type="text/javascript" src="../js/TweenMax.min.js"></script>
+  <!-- <script type="text/javascript" src="../js/test2.js"></script> -->
+  <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
 <body>
@@ -54,42 +58,42 @@
     </div> <!-- id="menu-page" -->
   </header><!-- class="header" -->
   <div id="fullpage">
-    <div class="quick">
-      <ul></ul>
-    </div>
-    <div class="scroll-btn">
-      <p>scroll down</p>
-      <img src="../images/icon-scroll.png" class="scrollbox" alt="">
-    </div>
-  <div class="fullsection full1" pageNum="1">
-      <div class="l-txt-box">
-        <p class="title">고려아연<br>기업사이트<br>리뉴얼.</p>
-        <p class="date">2022.04.01<br>www.koreazink.co.kr</p>
-        <p class="txt">비철금속의 글로벌 리더 컴퍼니<br>
-          고려아연의 리뉴얼 진행.<br>
-          이번 리뉴얼은 빅 타이포, 빅이미지, 와이드 레이아웃 등을 활용해 심플하면서도<br>
-          사용자 친화적인  UI/UX를 구현.</p>
+    <section class="section full1" pageNum="1">
+      <div class="contents">
+        <div class="l-txt-box">
+          <p class="title">고려아연<br>기업사이트<br>리뉴얼.</p>
+          <p class="date">2022.04.01<br>www.koreazink.co.kr</p>
+          <p class="txt">비철금속의 글로벌 리더 컴퍼니<br>
+            고려아연의 리뉴얼 진행.<br>
+            이번 리뉴얼은 빅 타이포, 빅이미지, 와이드 레이아웃 등을 활용해 심플하면서도<br>
+            사용자 친화적인  UI/UX를 구현.</p>
+        </div>
       </div>
-    </div><!--class="full1"-->
-    <div class="fullsection full2" pageNum="2">
-      <div class="l-txt-box">
-        <p class="title">목포대학교<br>웹사이트 리뉴얼.</p>
-        <p class="date">2022.04.01<br>www.koreazink.co.kr</p>
-        <p class="txt">비철금속의 글로벌 리더 컴퍼니 고려아연의 리뉴얼 진행.<br>
-          이번 리뉴얼은 빅 타이포, 빅이미지, 와이드 레이아웃 등을 활용해 심플하면서도<br>
-          사용자 친화적인  UI/UX를 구현.</p>
+    </section><!--class="full1"-->
+    <section class="section full2 dark" pageNum="2">
+      <div class="contents">
+        <div class="l-txt-box">
+          <p class="title">목포대학교<br>웹사이트 리뉴얼.</p>
+          <p class="date">2022.04.01<br>www.koreazink.co.kr</p>
+          <p class="txt">비철금속의 글로벌 리더 컴퍼니 고려아연의 리뉴얼 진행.<br>
+            이번 리뉴얼은 빅 타이포, 빅이미지, 와이드 레이아웃 등을 활용해 심플하면서도<br>
+            사용자 친화적인  UI/UX를 구현.</p>
+        </div>
       </div>
-    </div> <!--class="full2"-->
-    <div class="fullsection full3" pageNum="3">
-      <div class="l-txt-box">
-        <p class="title">상공회대학교<br>웹사이트 리뉴얼.</p>
-        <p class="date">2022.04.01<br>www.koreazink.co.kr</p>
-        <p class="txt">비철금속의 글로벌 리더 컴퍼니 고려아연의 리뉴얼 진행.<br>
-          이번 리뉴얼은 빅 타이포, 빅이미지, 와이드 레이아웃 등을 활용해 심플하면서도<br>
-          사용자 친화적인  UI/UX를 구현.</p>
+    </section> <!--class="full2"-->
+    <section class="section full3" pageNum="3">
+      <div class="contents">
+        <div class="l-txt-box">
+          <p class="title">상공회대학교<br>웹사이트 리뉴얼.</p>
+          <p class="date">2022.04.01<br>www.koreazink.co.kr</p>
+          <p class="txt">비철금속의 글로벌 리더 컴퍼니 고려아연의 리뉴얼 진행.<br>
+            이번 리뉴얼은 빅 타이포, 빅이미지, 와이드 레이아웃 등을 활용해 심플하면서도<br>
+            사용자 친화적인  UI/UX를 구현.</p>
+        </div>
       </div>
-    </div> <!--class="full3"-->
-    <div class="fullsection full4" pageNum="4">
+    </section> <!--class="full3"-->
+    <section class="section full4" pageNum="4">
+      <div class="contents">
         <div class="l-txt-box">
           <p class="title">고려아연<br>어플리케이션<br>제작.</p>
           <p class="date">2022.04.01<br>www.koreazink.co.kr</p>
@@ -97,8 +101,10 @@
             이번 리뉴얼은 빅 타이포, 빅이미지, 와이드 레이아웃<br>등을 활용해 심플하면서도<br>
             사용자 친화적인  UI/UX를 구현.</p>
         </div>
-    </div> <!--class="full4"-->
-    <div class="fullsection full5" pageNum="5">
+      </div>
+    </section> <!--class="full4"-->
+    <section class="section full5" pageNum="5">
+      <div class="contents">
         <div class="l-txt-box">
           <p class="title">
             여기여기 모여라!<br>
@@ -124,8 +130,15 @@
             </a>
           </div>
         </div>
-    </div> <!--class="full5"-->
+      </div>
+    </section> <!--class="full5"-->
   </div><!-- id="fullpage" -->
+  <div class="scroll-btn">
+    <p>scroll down</p>
+    <img src="../images/icon-scroll.png" class="scrollbox" alt="">
+  </div>
+
+
 </body>
 
 </html>

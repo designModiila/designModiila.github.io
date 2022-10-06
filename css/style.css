@@ -2,14 +2,12 @@ body{overflow: hidden;}
 /*레이아웃*/
 #fullpage {position: relative; top: 0px; z-index: 9; width: 100%; height: 100%;}
 
-.quick {position: fixed; left: 50px; top: 50%; transform: translateY(-50%); z-index: 100000}
-.quick li {width: 4px; height: 4px; margin-bottom: 16px; background: #222;; cursor: pointer; transition: all 0.8s;}
-.quick .on {background: #FB0033; height: 24px;}
+
 
 /*스크롤버튼*/
-.scroll-btn{position: fixed; left: 20px; bottom: 50px;}
+.scroll-btn{position: fixed; left: 20px; bottom: 50px; z-index: 100;}
 .scroll-btn p{display: inline-block; transform: rotate(-90deg); text-transform: uppercase; font-size: 9px; color: #222; font-weight: 700;}
-.scroll-btn img{display: inline-block; padding-left: 20px; margin-bottom: 50px; position: absolute; top: -60px; left: 10px;}
+.scroll-btn img{display: inline-block; padding-left: 20px; margin-bottom: 50px; position: absolute; top: -60px; left: 8px;}
 
 .scrollbox {animation: motion 0.3s linear 0s infinite alternate; margin-top: 0;}
 @keyframes motion {
@@ -17,19 +15,17 @@ body{overflow: hidden;}
 	100% {margin-top: -3px;}
 }
 
-
-.fullsection{width: 100%; height: 937px; position: relative;}
-/*.inner{max-width: 1600px; height: 100%; margin: 0 auto; }*/
-/*.fullsection .r-img-box{float: right; height: 100%; overflow: hidden;}*/
-.fullsection .l-txt-box{float: left; padding-top: 300px; padding-left: 200px;}
-.fullsection .l-txt-box .title{font-size: 70px; font-weight: 900; color: #000; line-height: 90px;}
-.fullsection .l-txt-box .date{font-size: 18px; font-weight: 300; margin-top: 34px; color: #666; line-height: 26px;}
-.fullsection .l-txt-box .txt{font-size: 26px; font-weight: 300; margin-top: 30px; color: #222;}
-.full1 {background: url('../images/mainbg_01.png') no-repeat 88% top;}
-.full2 {background: url('../images/mainbg_02.png') no-repeat right 35%;}
-.full3 {background: url('../images/mainbg_03.png') no-repeat right top;}
-.full4 {background: url('../images/mainbg_04.png') no-repeat right top;}
-.full5 {background: url('../images/mainbg_05.png') no-repeat right 95%;}
+body,#wrap{background:#0c0c0c;}
+.section{width: 100%; height: 937px; position: relative;}
+.section .l-txt-box{float: left; padding-top: 300px; padding-left: 200px;}
+.section .l-txt-box .title{font-size: 70px; font-weight: 900; color: #000; line-height: 90px;}
+.section .l-txt-box .date{font-size: 18px; font-weight: 300; margin-top: 34px; color: #666; line-height: 26px;}
+.section .l-txt-box .txt{font-size: 26px; font-weight: 300; margin-top: 30px; color: #222;}
+.full1 .contents{background: url('../images/mainbg_01.png') no-repeat 88% top;}
+.full2 .contents{background: url('../images/mainbg_02.png') no-repeat right 35%;}
+.full3 .contents{background: url('../images/mainbg_03.png') no-repeat right top;}
+.full4 .contents{background: url('../images/mainbg_04.png') no-repeat right top;}
+.full5 .contents{background: url('../images/mainbg_05.png') no-repeat right 95%;}
 .full5 .l-txt-box{padding-top: 220px;}
 .full5 .l-txt-box .title{font-size: 50px; line-height: inherit;}
 .full5 .l-txt-box .title span{text-decoration: underline;}
