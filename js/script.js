@@ -1,26 +1,4 @@
 $(function (){
-  $('#fullpage').fullpage({
-    //options here
-    navigation: true,
-    slidesToSections: true,
-    scrollingSpeed: 850,
-    easingcss3:'cubic-bezier(.61,.01,.13,.95)',
-    afterLoad: function(anchorLink, index, direction){
-      TweenMax.staggerFromTo($('header'), 0.5, {opacity: 0}, {opacity: 1, delay:0.3, ease: Power1.easeInOut})
-      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 1, x: '0%',delay:0.3, ease: Power1.easeInOut});
-			TweenMax.staggerFromTo($(".scroll-btn"), 0.8, {opacity: 0,}, {opacity: 1, delay:0.5, ease: Power1.easeInOut});
-
-    },
-    onLeave: function(anchorLink, index, direction){
-			TweenMax.staggerFromTo($("header"), 0.8, {opacity: 0}, {opacity: 0, ease: Power1.easeOut});
-      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 0, x: '%', ease: Power1.easeOut});
-			TweenMax.staggerFromTo($(".scroll-btn"), 0, {opacity: 1}, {opacity: 0,ease: Power1.easeInOut});
-    }
-  });
-});
-
-
-$(function (){
   $('#toggle').click(function () {
     $('#toggle .bar').toggleClass('animate');
     $('#menu-page').toggleClass('overlay');
@@ -51,3 +29,32 @@ $(function () {
     console.log(select_link);
   });
 });
+
+$(function(){
+  var e = document.querySelectorAll('.title p');
+  e.forEach(function(elem) {
+    elem.innerHTML = elem.innerHTML.replace(/\S/g, '<span class="elem">$&</span>');
+  });
+});
+
+$(function (){
+  $('#fullpage').fullpage({
+    //options here
+    navigation: true,
+    slidesToSections: true,
+    scrollingSpeed: 850,
+    easingcss3:'cubic-bezier(.61,.01,.13,.95)',
+    afterLoad: function(anchorLink, index, direction){
+      TweenMax.staggerFromTo($('header'), 0.5, {opacity: 0}, {opacity: 1, delay:0.3, ease: Power1.easeInOut})
+      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 1, x: '0%',delay:0.3, ease: Power1.easeInOut});
+			TweenMax.staggerFromTo($(".scroll-btn"), 0.8, {opacity: 0,}, {opacity: 1, delay:0.5, ease: Power1.easeInOut});
+      TweenMax.staggerFromTo($(".elem"), 0.5, {opacity:0, x: -90}, {opacity:1, x:0, delay:0.3, ease: Power1.easeInOut}, 0.1);
+    },
+    onLeave: function(anchorLink, index, direction){
+			TweenMax.staggerFromTo($("header"), 0.8, {opacity: 0}, {opacity: 0, ease: Power1.easeOut});
+      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 0, x: '%', ease: Power1.easeOut});
+			TweenMax.staggerFromTo($(".scroll-btn"), 0, {opacity: 1}, {opacity: 0,ease: Power1.easeInOut});
+    }
+  });
+});
+
