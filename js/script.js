@@ -37,16 +37,18 @@ $(function (){
     slidesToSections: true,
     scrollingSpeed: 850,
     easingcss3:'cubic-bezier(.61,.01,.13,.95)',
-    afterLoad: function(anchorLink, index, direction){
+    afterLoad: function(index, nextIndex, direction){
       TweenMax.staggerFromTo($('header'), 0.5, {opacity: 0}, {opacity: 1, delay:0.3, ease: Power1.easeInOut})
       TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 1, x: '0%',delay:0.3, ease: Power1.easeInOut});
 			TweenMax.staggerFromTo($(".scroll-btn"), 0.8, {opacity: 0,}, {opacity: 1, delay:0.5, ease: Power1.easeInOut});
+      TweenMax.staggerFromTo($(".container .title"), 0.8, {opacity: 0, y: 100}, {opacity: 1, y: 0, ease: "power4.easeOut"}, 0.15);
     },
-    onLeave: function(anchorLink, index, direction){
+    onLeave: function(index, nextIndex, direction){
 			TweenMax.staggerFromTo($("header"), 0.8, {opacity: 0}, {opacity: 0, ease: Power1.easeOut});
-      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 0, x: '%', ease: Power1.easeOut});
+      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 0, x: '0%', ease: Power1.easeOut});
 			TweenMax.staggerFromTo($(".scroll-btn"), 0, {opacity: 1}, {opacity: 0,ease: Power1.easeInOut});
     }
   });
 });
+
 
