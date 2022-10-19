@@ -70,14 +70,13 @@ a:hover .arrow:after{opacity: 1;}
 #overlay .company-info-wrap .location a:hover:after {width: 100%; opacity: 1;}
 #overlay .company-info-wrap .copy{font-size: 10px; position: absolute; bottom: -60px;}
 #overlay .company-info-wrap address{margin-top: 30px;}
-#menu-page.overlay #overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 1200px; opacity: 1; z-index: 100; transition: all 0.3s ease;}
-#menu-page.overlay #overlay nav ul li {margin-left: 0; opacity: 1;}
-#menu-page.overlay #overlay nav ul li:nth-child(1) {transition: all 0.9s 0.6s ease;}
-#menu-page.overlay #overlay nav ul li:nth-child(2) {transition: all 0.9s 0.8s ease;}
-#menu-page.overlay #overlay nav ul li:nth-child(3) {transition: all 0.9s 1.0s ease;}
-#menu-page.overlay #overlay nav ul li:nth-child(4) {transition: all 0.9s 1.2s ease;}
-#menu-page.overlay #overlay nav ul li:nth-child(5) {transition: all 0.9s 1.4s ease;}
-#menu-page.overlay #overlay .company-info-wrap{opacity: 1; transition: all 0.9s 1.8s ease;}
+#menu-page.overlay #overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 100vh; opacity: 1; z-index: 100; transition: all 0.3s ease;}
+#menu-page.overlay #overlay nav ul li {margin-left: 0; opacity: 1; transform: rotate(.001deg);}
+#menu-page.overlay #overlay nav ul li:nth-child(1) {transition: all ease 0.9s 0.6s;}
+#menu-page.overlay #overlay nav ul li:nth-child(2) {transition: all ease 0.9s 0.8s;}
+#menu-page.overlay #overlay nav ul li:nth-child(3) {transition: all ease 0.9s 1.0s;}
+#menu-page.overlay #overlay nav ul li:nth-child(4) {transition: all ease 0.9s 1.2s;}
+#menu-page.overlay #overlay .company-info-wrap{opacity: 1; transition: all 0.9s 1.6s ease;}
 #menu-page.overlay #overlay .company-info .tel p{display: block; font-size: 16px; color: #000; font-weight: 500; opacity: 1; transition: all 0.9s 0.6s ease;}
 #menu-page.overlay #overlay .company-info address{font-style: normal; font-weight: 500;}
 
