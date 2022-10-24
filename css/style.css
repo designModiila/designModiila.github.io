@@ -47,9 +47,6 @@ body,#wrap{background:#0c0c0c;}
 }
 @media screen and (max-width:767px){ 
 	/* Mobile */
-	.header h1{padding-left: 20px;}
-	#toggle{right: 0; padding-right: 20px; top: 22px;}
-	#fp-nav{width: 44px;}
 	section .contents{display: flex; flex-direction: column;}
 	.section .fullBg{width: 100%; height: 50vh; overflow: hidden;}
 	.section .fullBg img{width: 100%; max-width: 100%; height: 100%; object-fit: cover;}
@@ -60,6 +57,7 @@ body,#wrap{background:#0c0c0c;}
 	.section.full5 .fullBg{position: unset; height: unset;}
 	.section .fullBg{width: 100%; height: 50vh; overflow: hidden;}
 	.section .fullBg img{width: 100%; max-width: 100%; height: 100%; object-fit: cover;}
+	.full2 .fullBg img{object-position: 77% center;}
 	.section .l-txt-box{padding-top: 32px; padding-left: 49px;}
 	.section .l-txt-box .container{height: unset;}
 	.section .l-txt-box .title{font-size: 35px;}
@@ -70,6 +68,5 @@ body,#wrap{background:#0c0c0c;}
 	section.full5 .l-txt-box{padding-top: 0;}
 	.full5 .l-txt-box .go-box{padding-top: 66px; margin-bottom: 60px;}
 	.scroll-btn{display: none;}
-	#overlay nav{padding-left: 50px; padding-top: 140px;}
-	#overlay .company-info{padding-left: 50px;}
+
 }
