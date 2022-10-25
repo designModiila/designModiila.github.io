@@ -1,8 +1,9 @@
 #recruit-page{width: 100%; height: auto; position: relative;}
-.top-bg{position: absolute; right: 0; top: 20%;}
+.top-bg{position: absolute; right: 0; top: 20%; z-index: -1;}
 .inner{width: 1200px; height: 100%; margin: 0px auto 50px; padding-top: 200px;}
 .top-con{margin-bottom: 200px;}
 .top-con .main-title{margin-bottom: 90px;}
+.top-con .sub-title br.moblie{display: none;}
 .top-con .sub-title{margin-bottom: 90px;}
 .top-con .main-txt{position: relative; padding-left: 50px;}
 .top-con .main-txt:before{content: ''; width: 3px; height: 100%; background: #000; position: absolute; left: 0;}
@@ -13,8 +14,46 @@
 .bot-con{margin-bottom: 200px;}
 .bot-con .main-title{margin-bottom: 90px;}
 .bot-con .sub-title{margin-bottom: 200px;}
-.bot-con > ul{margin-bottom: 80px;}
-.bot-con > ul > li{width: calc(25% - 80px); float: left; padding-left: 100px;}
-.bot-con > ul > li:first-child{padding-left: 0px;}
-.bot-con > ul > li .work-tit{font-weight: 700; margin-top: 50px;}
-.bot-con > ul > li .work-txt{font-weight: 300; font-size: 18px; color: #666; margin-top: 50px;}
+.bot-con > ul{display: flex; margin-bottom: 80px;}
+.bot-con > ul > li{width: 25%;}
+.bot-con > ul > li .work{display: flex; flex-direction: column; align-items: flex-start; gap: 50px;}
+.bot-con > ul > li .work-tit{font-weight: 700; margin-bottom: 50px;}
+.bot-con > ul > li .work-txt{font-weight: 300; font-size: 18px; color: #666;}
+
+@media screen and (max-width: 1440px) {
+	/* Desktop */
+  .inner{width: 100%; padding: 200px 50px 0;}
+  .top-con .main-title{font-size: 50px;}
+  .top-con .sub-title{font-size: 40px;}
+  .top-bg img{width: 80%; float: right; z-index: -1;}
+  .top-con .main-txt {width: 50%;}
+
+}
+@media screen and (max-width: 1220px) {
+	.top-bg img{width: 70%;}
+
+}
+@media screen and (max-width: 1023px) {
+	/* Tablet */
+  .top-bg img{width: 60%;}
+  .bot-con .sub-title{margin-bottom: 130px;}
+
+}
+
+@media screen and (max-width:767px){
+  .inner{width: 100%; padding: 200px 20px 0;}
+  .top-bg{display: none;}
+  .top-con{margin-bottom: 130px;}
+  .top-con .sub-title br.moblie{display: block;}
+  .top-con .main-txt p{width: 100%; font-size: 16px;}
+  .top-con .main-txt{width: 100%; padding-left: 30px;}
+  .go-box a{font-size: 16px;}
+  .bot-con .main-title{font-size: 40px; margin-bottom: 50px;}
+  .bot-con .sub-title{font-size: 20px; margin-bottom: 90px;}
+  .bot-con > ul{flex-direction: column; margin-bottom: 0;}
+  .bot-con > ul > li{width: 100%; margin-bottom: 60px;}
+  .bot-con > ul > li .work{flex-direction: row;}
+  .bot-con > ul > li .work-tit{margin-bottom: 10px; font-size: 20px;}
+  .bot-con > ul > li .work-txt{font-size: 14px;}
+  .bot-con > ul > li .work-txt br{display: none;}
+}
