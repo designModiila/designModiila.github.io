@@ -9,13 +9,42 @@
 .mid-con{margin-bottom: 200px;}
 .mid-con .main-title{margin-bottom: 90px;}
 .mid-con .sub-title{margin-bottom: 90px;}
-.mid-con > ul{display: flex; justify-content: space-between;}
-.mid-con > ul > li{padding-left: 100px;}
-.mid-con > ul > li:first-child{padding-left: 0px;}
-.mid-con > ul > li .work-tit{font-weight: 700; margin-top: 50px;}
-.mid-con > ul > li .work-txt{font-weight: 300; font-size: 18px; color: #666; margin-top: 50px;}
+.mid-con > ul{display: flex; justify-content: space-between; gap: 50px;}
+.mid-con > ul > li .work{display: flex; flex-direction: column; gap: 50px; align-items: flex-start;}
+.mid-con > ul > li .work-tit{font-weight: 700; margin-bottom: 50px;}
+.mid-con > ul > li .work-txt{font-weight: 300; font-size: 18px; color: #666; word-break: keep-all;}
 
 .bot-con .main-title{margin-bottom: 90px;}
 .bot-con .sub-title{margin-bottom: 90px;}
-.bot-con > ul > li{float: left; width: calc(25% - 75px); padding-right: 100px; margin-bottom: 50px;}
-.bot-con > ul > li:nth-child(4n){padding-right: 0px;}
+.bot-con > ul{display: flex; flex-wrap: wrap; gap: 50px 5%; justify-content: center;}
+/* .bot-con > ul > li{width: 19%;} */
+/*.bot-con > ul > li:nth-child(4n){padding-right: 0px;} */
+/* .bot-con > ul > li{float: left; width: calc(25% - 75px); padding-right: 100px; margin-bottom: 50px;}
+.bot-con > ul > li:nth-child(4n){padding-right: 0px;} */
+
+@media screen and (max-width: 1440px) {
+	/* Desktop */
+  .inner{width: 100%; padding: 200px 50px 0;}
+  .bot-con > ul > li{width: 20%;}
+}
+@media screen and (max-width: 1023px) {
+	/* Tablet */
+  .mid-con > ul > li .work-tit{font-size: 25px;}
+  .bot-con > ul > li{width: 30%;}
+}
+@media screen and (max-width:767px){
+  .inner{width: 100%; padding: 200px 20px 0;}
+  .top-con .main-title{font-size: 50px;}
+  .top-con .sub-title{font-size: 40px;}
+  .top-con .main-txt{font-size: 16px; padding-left: 30px;}
+  .mid-con .main-title{font-size: 40px; margin-bottom: 50px;}
+  .mid-con .sub-title{font-size: 20px;}
+  .mid-con > ul{flex-direction: column;}
+  .mid-con > ul > li .work{flex-direction: row; gap: 24px;}
+  .mid-con > ul > li .work-tit{font-size: 20px; margin-bottom: 30px;}
+  .mid-con > ul > li .work-txt{font-size: 14px;}
+  .bot-con .main-title{font-size: 40px; margin-bottom: 50px;}
+  .bot-con .sub-title{font-size: 20px;}
+  .bot-con > ul{justify-content: space-between;}
+  .bot-con > ul > li{width: 45%;}
+}
