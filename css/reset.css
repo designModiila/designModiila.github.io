@@ -56,14 +56,14 @@ a:hover .arrow:after{opacity: 1;}
 #toggle div.bar.animate:after {top: 0; transform: rotate(45deg); transition: top 0.3s ease, transform 0.3s 0.3s ease;}
 #toggle div.bar.animate:before {bottom: 0; transform: rotate(-45deg); transition: bottom 0.3s ease, transform 0.3s 0.3s ease;}
 #overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 0; overflow: hidden; transition: all 0.3s ease, max-height 0s 0.6s ease; z-index: 100; opacity: 1; background: #f5f5f5;}
-#overlay nav {width: 100%; height: 100%; overflow: hidden; padding-top: 200px; padding-left: 200px;}
+#overlay nav {width: 100%; height: 100%; overflow: hidden; display: flex; flex-direction: column; justify-content: space-evenly; padding-left: 200px;}
 #overlay nav ul, #overlay nav ul li {margin: 0; padding: 0; display: block; position: static;}
 #overlay nav ul li {opacity: 0; transition: all 0.9s 0s ease; margin-left: 60px;}
 #overlay nav ul li a {position: relative; height: 70px; display: inline-block;text-transform: normal; font-size: 50px; font-weight: 700; color: #000000; text-decoration: none; transition: all 0.6s 0s ease;}
 #overlay nav ul li a:after {content: " "; position: absolute; left: 0; bottom: 0; width: 0; opacity: 0; height: 1px; background: #888888; transition: all 0.6s 0s ease;}
 #overlay nav ul li a:hover:after {width: 100%; opacity: 1;}
 #overlay nav ul li a:hover {color: #888888;}
-#overlay .company-info{padding-top: 152px;}
+/* #overlay .company-info{padding-top: 152px;} */
 #overlay .company-info-wrap{position: relative; opacity: 0; transition: all 0.9s 0s ease;}
 #overlay .company-info-wrap .location{margin-top: 30px;}
 #overlay .company-info-wrap .location a{position: relative}
