@@ -47,7 +47,7 @@ body,#wrap{background:#0c0c0c;}
 }
 @media screen and (max-width:767px){ 
 	/* Mobile */
-	.section{width: 100%; height: 100% !important; position: relative;}
+	.section{width: 100%; height: 100%; position: relative;}
 	section .contents{display: flex; flex-direction: column;}
 	.section .fullBg{width: 100%; height: 50vh; overflow: hidden;}
 	.section .fullBg img{width: 100%; max-width: 100%; height: 100%; object-fit: cover;}
@@ -56,7 +56,7 @@ body,#wrap{background:#0c0c0c;}
 	.section.full3 .fullBg{position: unset;}
 	.section.full4 .fullBg{position: unset;}
 	.section.full5 .fullBg{position: unset; height: unset;}
-	.section .fullBg{width: 100%; height: 50vh; overflow: hidden;}
+	.section .fullBg{width: 100%; height: 45vh; overflow: hidden;}
 	.section .fullBg img{width: 100%; max-width: 100%; height: 100%; object-fit: cover;}
 	.full2 .fullBg img{object-position: 77% center;}
 	.section .l-txt-box{padding-top: 20px; padding-left: 49px;}
