@@ -3,11 +3,7 @@ $(function (){
     $('#toggle .bar').toggleClass('animate');
     $('#menu-page').toggleClass('overlay');
   });
-});
 
-
-//문의 페이지 탭메뉴
-$(function () {
   $('.pc_tab li').first().addClass("activeClass");
   $(".tab-contents").not(':first').hide();
 
@@ -28,22 +24,18 @@ $(function () {
     $(select_link).show();
     console.log(select_link);
   });
-});
 
-$(function(){
-  $.each($(".container p"), function(i, v){
-    var mainText = $(this);
-    // var mainTextSpace = $(this).text();
-    var animatedMainT = $(this).text().split("");
+  // $.each($(".container p"), function(i, v){
+  //   var mainText = $(this);
+  //   // var mainTextSpace = $(this).text();
+  //   var animatedMainT = $(this).text().split("");
   
-    mainText.empty();
-    $.each(animatedMainT, function(i, v) {
-      mainText.append('<span>'+v+'</span>');
-    });
-  });
-});
+  //   mainText.empty();
+  //   $.each(animatedMainT, function(i, v) {
+  //     mainText.append('<span>'+v+'</span>');
+  //   });
+  // });
 
-$(function (){
   $('#fullpage').fullpage({
     //options here
     navigation: true,
@@ -54,7 +46,19 @@ $(function (){
       TweenMax.staggerFromTo($('header'), 0.5, {opacity: 0}, {opacity: 1, delay:0.3, ease: Power1.easeInOut})
       TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 1, x: '0%',delay:0.3, ease: Power1.easeInOut});
 			TweenMax.staggerFromTo($(".scroll-btn"), 0.8, {opacity: 0,}, {opacity: 1, delay:0.5, ease: Power1.easeInOut});
-      TweenMax.staggerFromTo($(".container > p"), 1.2, {opacity: 0, y: 100}, {opacity: 1, y: 0, delay: 0.2, ease: Power1.easeInOut}, 0.05);
+
+      $.each($(".container p"), function(i, v){
+        var mainText = $(this);
+        // var mainTextSpace = $(this).text();
+        var animatedMainT = $(this).text().split("");
+      
+        mainText.empty();
+        $.each(animatedMainT, function(i, v) {
+          mainText.append('<span>'+v+'</span>');
+        });
+      });
+
+      // TweenMax.staggerFromTo($(".container p"), 1.2, {opacity: 0, y: 100}, {opacity: 1, y: 0, delay: 0.2, ease: Power1.easeInOut}, 0.05);
       TweenMax.staggerFromTo($(".container > p > span"), 0.8, {opacity:0, y:'120%'}, {opacity: 1, y:'0%', delay: 0.2, ease: Power1.easeInOut}, 0.05);
       TweenMax.staggerFromTo($(".l-txt-box .txt"), 1.5, {opacity:0, y:'0%'}, {opacity: 1, y:'0%', delay: 1, ease: Power1.easeInOut}, 0.2);
       TweenMax.staggerFromTo($(".l-txt-box .date"), 1, {opacity:0}, {opacity: 1, delay:1.1, ease: Power1.easeInOut}, 0.2);
@@ -63,12 +67,11 @@ $(function (){
 			TweenMax.staggerFromTo($("header"), 0.8, {opacity: 0}, {opacity: 0, ease: Power1.easeOut});
       TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 0, x: '0%', ease: Power1.easeOut});
 			TweenMax.staggerFromTo($(".scroll-btn"), 0, {opacity: 1}, {opacity: 0,ease: Power1.easeInOut});
-      TweenMax.staggerFromTo($(".container > p"), 0, {opacity:0,y:'0%'}, {opacity: 0, y:'60%', ease: Power1.ease});
-      TweenMax.staggerFromTo($(".container > p > span"), 0, {opacity:0,y:'0%'}, {opacity: 0, y:'120%', ease: Power1.easeInOut});
+      // TweenMax.staggerFromTo($(".container p"), 0, {opacity:0,y:'0%'}, {opacity: 0, y:'60%', ease: Power1.ease});
+      TweenMax.staggerFromTo($(".container > p > span"), 0, {opacity:0,y:0}, {opacity: 0, y:0, ease: Power1.easeInOut});
       TweenMax.staggerFromTo($(".l-txt-box .txt"), 0, {opacity:0, y:'0%'}, {opacity: 0, y:'100%',ease: Power1.easeInOut});
       TweenMax.staggerFromTo($(".l-txt-box .date"), 0, {opacity:0}, {opacity: 0, ease: Power1.easeInOut});
     }
   });
 });
-
 
