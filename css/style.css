@@ -64,7 +64,7 @@ body,#wrap{background:#0c0c0c;}
 	.section .l-txt-box .date{font-size: 16px; margin-top: 19px; line-height: normal;}
 	.section .l-txt-box .txt{font-size: 16px; color: #666; margin-top: 19px;}
 	.section .l-txt-box .txt br{display: none;}
-	section.full5 .contents{display: flex; flex-direction: column-reverse;}
+	section.full5 .contents{display: flex; flex-direction: column-reverse; justify-content: space-around;}
 	section.full5 .l-txt-box{padding-top: 50px;}
 	section.full5 .l-txt-box .title{font-size: 22px;}
 	.full5 .l-txt-box .go-box a{font-size: 18px;}
