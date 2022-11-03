@@ -56,15 +56,19 @@
 }
 @media screen and (max-width:767px){
   .inner{width: 100%; padding: 200px 20px 0;}
-  .swiper-slide .txt-box{bottom: 0; top: auto; width: 100%; height: auto; transform: unset; padding: 5px 0; text-align: center; margin: 0 20px; left: auto; right: auto;}
+  .top-con .main-title{font-size: 50px;}
+  .top-con .sub-title{font-size: 40px; margin-bottom: 50px;}
+  .swiper{margin-bottom: 50px;}
+  .swiper-slide .txt-box{position: unset; height: auto; width: 100%; padding: 5px 0; transform: unset; align-items: center;}
   .swiper-slide:nth-child(even) .txt-box{left: auto; right: auto;}
   .swiper-slide .txt-box .title p br{display: none;}
   .swiper-slide .txt-box .sub{margin-bottom: 0;}
   .swiper-slide .txt-box .sub p{font-size: 14px;}
   .swiper-slide .txt-box .title p{font-size: 16px;}
   .project-list .list-wrap li{padding: 15px}
-  .project-list .list-wrap .box .info p:first-child{font-size: 16px;}
+  .project-list .list-wrap .box .info p:first-child{font-size: 16px; margin-bottom: 0;}
   .project-list .list-wrap .box .info p:last-child{font-size: 14px;}
-  .project-list .list-wrap .box .date{width: 130px;}
+  .project-list .list-wrap .box .info{display: block; margin-bottom: 8px;}
+  .project-list .list-wrap .box .date{display: block; width: 100%; text-align: left;}
   .project-list .list-wrap .box .date p{font-size: 14px;}
 }

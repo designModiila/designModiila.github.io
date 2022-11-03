@@ -110,7 +110,7 @@ section.dark .contents:before, section.dark .contents:after{border-color:rgba(0,
   .header h1{padding-left: 20px; padding-top: 20px}
   #toggle{top: 25px; right: 20px; padding-right: 0;}
   #fp-nav{width: 44px;}
-  #overlay nav{display: flex; flex-direction: column; justify-content: space-evenly; padding-left: 0px; padding-top: 0px; margin: auto 40px;}
+  #overlay nav{display: flex; flex-direction: column; justify-content: space-evenly; padding: 0 20px;}
   #overlay .company-info{padding-top: 0;}
   #overlay nav ul li a{height: 50px; font-size: 40px;}
 }

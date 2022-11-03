@@ -1,4 +1,5 @@
 html, body{overflow: hidden;}
+/* .inner{width: 1200px; height: 100%; margin: 0px auto 50px; padding-top: 200px;} */
 .contact-info{width: 100%; height: 90px; margin-bottom: 75px; padding-top: 220px; padding-left: 200px; box-sizing: unset;}
 .contact-info > p{float: left;}
 .contact-info > p span{display: block;}
@@ -18,7 +19,7 @@ html, body{overflow: hidden;}
 }
 @media screen and (max-width:767px){
   .contact-info .info-title{display: none;}
-  .contact-info{flex-direction: column; padding-left: 50px;}
+  .contact-info{flex-direction: column; padding: 220px 20px 0 50px; height: auto;}
   .contact-info p.info{margin-bottom: 30px;}
   .contact-info p.info:nth-child(3){margin-bottom: 0px;}
 }
