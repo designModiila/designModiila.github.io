@@ -18,7 +18,7 @@
 .tab-contents div{margin-bottom: 40px;}
 .tab-contents div label{display: block; font-size: 18px; color: #222;}
 .tab-contents div input[type="text"], [type="email"], [type="file"]{border: none; border-bottom: 1px solid #222; width: 100%; padding: 0 0 0.875em 0;}
-.tab-contents div textarea{width: 100%; height: 470px; overflow: auto; resize: none;}
+.tab-contents div textarea{width: 100%; height: 470px; overflow: auto; resize: none; box-sizing: border-box;}
 .tab-contents .c-content{position: relative;}
 .tab-contents .c-content img{position: absolute; left: -72px; bottom: 20px;}
 .tab-contents div input[type='text']:focus, [type='email']:focus, textarea:focus {outline: none;}
@@ -63,4 +63,6 @@
   .m_tab {display: block;}
   .pc_tab{display: none;} */
   .tab-contents .c-content img{left: auto; right: -9px;}
+  .tab-contents .attachment input[type='text']{width: 85%;}
+  .tab-contents .attachment .file-input-box{width: 10%;}
 }
