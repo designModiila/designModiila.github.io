@@ -39,10 +39,10 @@ a:hover .arrow:after{opacity: 1;}
 .header{position: fixed; width: 100%; z-index: 1000;}
 .header h1{font-size: 0; padding-top: 50px; padding-left: 50px;}
 
-.footer{width: 100%; border-top: 1px solid #222;}
-.footer .mfooter{float: left; width: calc(100% - 65px); text-align: center; color: #222; padding: 25px 0; display: block;}
+.footer{width: 100%; border-top: 1px solid #222; position: relative;}
+.footer .mfooter{width: 100%; text-align: center; color: #222; padding: 25px 0; display: block;}
 .footer .mfooter span{display: inline-block;}
-.footer img{float: right; padding: 15px 15px 0; display: block;}
+.footer img{padding: 15px 15px 0; display: block; position: absolute; right: 0; top: 0;}
 
 /*토글메뉴*/
 #toggle {position: absolute; top: 50px; right: 50px; width: 30px; height: 21px; cursor: pointer; z-index: 1000; box-sizing: unset;}

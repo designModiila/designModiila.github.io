@@ -62,7 +62,7 @@
   /* .pc_tab ul li{width: 50%;}
   .m_tab {display: block;}
   .pc_tab{display: none;} */
-  .tab-contents .c-content img{left: auto; right: -9px;}
+  .tab-contents .c-content img{left: auto; right: 0px;}
   .tab-contents .attachment input[type='text']{width: 85%;}
   .tab-contents .attachment .file-input-box{width: 10%;}
 }
