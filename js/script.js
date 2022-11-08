@@ -36,9 +36,9 @@ $(function (){
       });
     });
 
-    TweenMax.staggerFromTo($(".container p span"), 0.8, {opacity:0, y: '120%'}, {opacity: 1, y: '0%', delay: 0.2, ease: Power1.easeInOut}, 0.05);
-    TweenMax.staggerFromTo($(".l-txt-box .txt"), 1.5, {opacity:0, y:'0%'}, {opacity: 1, y:'0%', delay: 1, ease: Power1.easeInOut}, 0.2);
-    TweenMax.staggerFromTo($(".l-txt-box .date"), 1, {opacity:0}, {opacity: 1, delay:1.1, ease: Power1.easeInOut}, 0.2);
+    TweenMax.staggerFromTo($(".container p span"), 0.5, {opacity:0, y: '120%'}, {opacity: 1, y: '0%', delay: 0.2, ease: Power1.easeInOut}, 0.05);
+    TweenMax.staggerFromTo($(".l-txt-box .txt"), 1.5, {opacity:0, y:'0%'}, {opacity: 1, y:'0%', delay: 1, ease: Power1.easeInOut}, 0.5);
+    TweenMax.staggerFromTo($(".l-txt-box .date"), 1, {opacity:0}, {opacity: 1, delay:1.1, ease: Power1.easeInOut}, 0.5);
   }
 
   function textMotionInit(){
