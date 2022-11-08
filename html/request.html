@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>REQUEST</title>
   <link rel="stylesheet" href="../css/font-face.css">
+  <link rel="stylesheet" href="../css/aos.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/request.css">
   <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="../js/aos.js"></script>
   <script type="text/javascript" src="../js/script.js"></script>
 </head>
 
-<body>
+<body data-aos-easing="ease-in-out" data-aos-duration="800" data-aos-delay="300">
   <header class="header">
     <h1 class="company-logo">
       <a href="./index.html"><img src="../images/logo_modiila.png" alt="모디라로고">모디라</a>
@@ -55,14 +57,24 @@
   <div id="request-page">
     <div class="inner">
       <div class="top-con">
-        <p class="main-title f60">request.</p>
-        <p class="sub-title f50">우리와 함께<br>프로젝트를 시작해요.</p>
+        <!-- <p class="main-title f60">request.</p> -->
+        <p class="main-title f60" data-aos="fade-up">
+          <span>r</span>
+          <span>e</span>
+          <span>q</span>
+          <span>u</span>
+          <span>e</span>
+          <span>s</span>
+          <span>t</span>
+          <span>.</span>
+        </p>
+        <p class="sub-title f50" data-aos="fade-up">우리와 함께<br>프로젝트를 시작해요.</p>
         <img src="../images/requestbg.png" alt="">
       </div>
       <div class="request-box">
         <div class="request-tab">
-          <p>유형을 선택해주세요!</p>
-          <div class="pc_tab">
+          <p data-aos="fade-up">유형을 선택해주세요!</p>
+          <div class="pc_tab" data-aos="fade-up">
             <ul>
               <li><a href="#tab01">웹사이트</a></li>
               <li><a href="#tab02">모바일웹</a></li>
@@ -92,24 +104,24 @@
           </div>
           <div id="tab01" class="tab-contents">
             <form action="#">
-              <div class="c-name">
+              <div class="c-name" data-aos="fade-up">
                 <label for="c-name">회사명 / 이름</label>
                 <input type="text" name="c-name">
               </div>
-              <div class="c-number">
+              <div class="c-number" data-aos="fade-up">
                 <label for="c-number">핸드폰 번호</label>
                 <input type="text" name="c-number">
               </div>
-              <div class="c-mail">
+              <div class="c-mail" data-aos="fade-up">
                 <label for="c-mail">이메일 주소</label>
                 <input type="email" name="c-mail">
               </div>
-              <div class="c-content">
+              <div class="c-content" data-aos="fade-up">
                 <label for="c-content">문의하실 내용을 입력해 주세요!</label>
                 <textarea name="c-content"></textarea>
                 <img src="../images/request_icon.png" alt="">
               </div>
-              <div class="attachment">
+              <div class="attachment" data-aos="fade-up">
                 <label for="file-name">파일첨부</label>
                 <input type="text" id="file-name" class="file-input-textbox" readonly>
                 <div class="file-input-box">
@@ -117,7 +129,7 @@
                   <input type="file" name="flie_1" class="file-input-hidden" onchange="javascript: document.getElementById('file-name').value=this.value">
                 </div>
               </div>
-              <div class="submit">
+              <div class="submit" data-aos="fade-up">
                 <input type="submit" value="전달하기">
               </div>
             </form>

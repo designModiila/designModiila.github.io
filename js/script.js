@@ -1,8 +1,17 @@
 $(function (){
+  AOS.init({
+    delay: 300,
+    duration: 800,
+    easing: 'ease-in-out'
+  });
+
+
   $('#toggle').click(function () {
     $('#toggle .bar').toggleClass('animate');
     $('#menu-page').toggleClass('overlay');
   });
+
+  $('.main-title').addClass('on');
 
   $('.pc_tab li').first().addClass("activeClass");
   $(".tab-contents").not(':first').hide();

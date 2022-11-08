@@ -2,8 +2,8 @@ html, body{overflow: hidden;}
 /* .inner{width: 1200px; height: 100%; margin: 0px auto 50px; padding-top: 200px;} */
 .contact-info{width: 100%; max-width: 1200px; margin: 0 auto; height: 90px; margin-bottom: 75px; padding-top: 220px; box-sizing: unset;}
 .contact-info > p{float: left;}
-.contact-info > p span{display: block;}
-.contact-info .info-title{width: 45%; font-weight: 900; font-size: 60px;}
+.contact-info .info > span{display: block;}
+.contact-info .main-title{width: 45%; font-weight: 900; font-size: 60px;}
 .contact-info p.info{margin-right: 80px; position: relative;}
 .contact-info p.info::before{position: absolute; content: ''; display: block; width: 3px; height: 100%; background: #000; left: -24px;}
 

@@ -22,8 +22,8 @@
 .tab-contents .c-content{position: relative;}
 .tab-contents .c-content img{position: absolute; left: -72px; bottom: 20px;}
 .tab-contents div input[type='text']:focus, [type='email']:focus, textarea:focus {outline: none;}
-.tab-contents div input[type="submit"]{width: 200px; height: 60px; background: #222; color: #fff; font-weight: 700; font-size: 20px; transition: all 0.4s ease;}
-.tab-contents div input[type="submit"]:hover{background: #fff; color: #222;}
+.tab-contents div input[type="submit"]{width: 200px; height: 60px; background: #fff; color: #222; font-weight: 700; font-size: 20px; transition: all 0.4s ease; border: 1px solid #222; border-radius: 5px;}
+.tab-contents div input[type="submit"]:hover{background: #fb0033; color: #fff; border: 1px solid #fb0033;}
 .tab-contents .file-input-box{position: relative;}
 .tab-contents .file-input-hidden{position: absolute; right: 0px; top: 0px; opacity: 0;}
 .tab-contents .submit{text-align: center; padding-top: 40px;}
