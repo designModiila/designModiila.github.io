@@ -4,40 +4,28 @@
 .top-con img{position: absolute; right: 0; bottom: 0; z-index: -1;}
 .top-con .main-title{margin-bottom: 90px;}
 .request-box{padding-left: 25%;}
-.request-tab > p{font-size: 18px; margin-bottom: 20px; color: #222;}
-.pc_tab ul{display: flex; flex-wrap: wrap; overflow: hidden; width: 100%; margin-bottom: 61px;}
-.pc_tab ul li{width: 20%; box-sizing: border-box; list-style-type: none; border: 1px solid #ccc; text-align: center; line-height: 40px;}
-.pc_tab ul li a{color: #666; font-size: 16px; position: relative; padding-left: 20px;}
-.pc_tab ul li a:before{color: #666; display: block; position: absolute; content: ''; background: url(../images/icon-check-off.png) no-repeat; width: 14px; height: 11px; left: 0px; top: 50%; transform: translateY(-50%);}
-.pc_tab ul li.activeClass{border: 1px solid #222;}
-.pc_tab ul li.activeClass a{color: #222;}
-.pc_tab ul li.activeClass a:before{width: 18px; height: 19px; background: url(../images/icon-check-on.png) no-repeat;}
-.m_tab {display: none;}
-.m_tab select {width:100%; height: 50px; }
-
-.tab-contents div{margin-bottom: 40px; position: relative;}
-/* .tab-contents div label{display: block; font-size: 18px; color: #222;} */
-.tab-contents div label{position: absolute; display: block; font-size: 18px; color: #666; transition: all 0.3s; top: 0px; left: 5px;}
-.tab-contents div input{border: none; border-bottom: 1px solid #222; width: 100%; /* padding: 0 0 0.875em 0; */ height: 30px;}
-.tab-contents div input:focus{outline: none;}
-.tab-contents div textarea:focus{outline: none;}
-.tab-contents div input:focus + label, .tab-contents div textarea:focus + label{top: -20px; left: 5px; font-size: 14px; color: #222;}
-.tab-contents div textarea{width: 100%; height: 470px; overflow: auto; resize: none; box-sizing: border-box;}
-.tab-contents .c-content{position: relative;}
-.tab-contents .c-content img{position: absolute; left: -72px; bottom: 20px;}
-/* .tab-contents div input[type='text']:focus, [type='email']:focus, textarea:focus {outline: none;} */
-.tab-contents div input[type="submit"]{width: 200px; height: 60px; background: #fff; color: #222; font-weight: 700; font-size: 20px; transition: all 0.4s ease; border: 1px solid #222; border-radius: 5px;}
-.tab-contents div input[type="submit"]:hover{background: #fb0033; color: #fff; border: 1px solid #fb0033;}
-.tab-contents .file-input-box{position: relative;}
-.tab-contents .file-input-hidden{position: absolute; right: 0px; top: 0px; opacity: 0;}
-.tab-contents .submit{text-align: center; padding-top: 40px;}
-.tab-contents .attachment input[type='text']{width: 95%; float: left;}
-.tab-contents .attachment .file-input-box{width: 4%; float: right;}
+input:valid ~ label, textarea:valid ~ label, input:focus ~ label, textarea:focus ~ label{font-size: 14px; color: #fb0033; top: -40px; transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1)}
+.request-form > form div{width: 100%; position: relative; margin-bottom: 50px;}
+.request-form label{color: #999; padding: 10px 5px; position: absolute; top: 0; left: 0; transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1); pointer-events: none;}
+.request-form input{border: 0; border-bottom: 1px solid #999; width: 100%; height: 45px; font-size: 16px;}
+.request-form input ~ span, .request-form textarea ~ span{display: block; width: 0px; height: 3px; background: #fb0033; position: absolute; bottom: 0; left: 0; transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);}
+.request-form input:focus, .request-form textarea:focus{outline: 0;}
+.request-form input:focus ~ span, .request-form textarea:focus ~ span{width: 100%; transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1);}
+.request-form .c-content{height: 470px;}
+textarea{width: 100%; height: 100%; box-sizing: border-box; resize: none; border: 0; border-bottom: 1px solid #999;}
+.request-form .c-content img{position: absolute; left: -72px; bottom: 20px;}
+.request-form .attachment{display: flex; align-items: center; justify-content: space-between;}
+.request-form .attachment input#file-name{width: 95%;}
+.request-form .attachment .file-input-box{width: 5%; position: relative; margin-bottom: 0;}
+.request-form .attachment .file-input-box img{display: block; margin: 0 auto;}
+.request-form .file-input-hidden{position: absolute; right: 0px; top: 0px; opacity: 0;}
+.request-form .submit{text-align: center; padding-top: 40px;}
+.request-form .submit input{width: 200px; height: 60px; background: #fff; color: #222; font-weight: 700; font-size: 20px; transition: all 0.4s ease; border: 1px solid #222; border-radius: 5px;}
+.request-form .submit input:hover{background: #fb0033; color: #fff; border: 1px solid #fb0033;}
 
 @media screen and (max-width: 1440px) {
 	/* Desktop */
   .inner{width: 100%; padding: 200px 50px 0;}
-  .pc_tab ul li{width: 25%;}
 
 }
 @media screen and (max-width: 1023px) {
@@ -53,21 +41,13 @@
 
 @media screen and (max-width:780px){
   .request-box{width: 100%; overflow: hidden;}
-  .pc_tab ul li{width: 50%;}
-  /* .m_tab {display: block; margin-bottom: 40px;}
-  .pc_tab{display: none;} */
-  .m_tab .select option{font-size: 20px;}
   .top-con img{position: unset; width: 100%; margin-top: 33px;}
 }
 
 @media screen and (max-width:767px){
   .inner{width: 100%; padding: 200px 20px 0;}
-  
-  /* .pc_tab ul li{width: 50%;}
-  .m_tab {display: block;}
-  .pc_tab{display: none;} */
 
-  .tab-contents .c-content img{left: auto; right: 0px;}
-  .tab-contents .attachment input[type='text']{width: 85%;}
-  .tab-contents .attachment .file-input-box{width: 10%;}
+  .request-form .c-content img{left: auto; right: 0px;}
+  .request-form .attachment input[type='text']{width: 85%;}
+  .request-form .attachment .file-input-box{width: 10%;}
 }

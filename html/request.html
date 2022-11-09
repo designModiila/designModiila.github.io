@@ -72,95 +72,41 @@
         <img src="../images/requestbg.png" alt="">
       </div>
       <div class="request-box">
-        <div class="request-tab">
-          <!-- <p data-aos="fade-up">유형을 선택해주세요!</p>
-          <div class="pc_tab" data-aos="fade-up">
-            <ul>
-              <li><a href="#tab01">웹사이트</a></li>
-              <li><a href="#tab02">모바일웹</a></li>
-              <li><a href="#tab03">어플리케이션</a></li>
-              <li><a href="#tab04">반응형웹</a></li>
-              <li><a href="#tab05">모바일웹</a></li>
-              <li><a href="#tab06">UI / UX</a></li>
-              <li><a href="#tab07">키오스크</a></li>
-              <li><a href="#tab08">유지보수</a></li>
-              <li><a href="#tab09">운영관리</a></li>
-              <li><a href="#tab10">유지보수</a></li>
-            </ul>
-          </div>
-          <div class="m_tab">
-            <select name="" id="tabmenu">
-              <option value="#tab01">웹사이트</option>
-              <option value="#tab02">모바일웹</option>
-              <option value="#tab03">어플리케이션</option>
-              <option value="#tab04">반응형웹</option>
-              <option value="#tab05">모바일웹</option>
-              <option value="#tab06">UI / UX</option>
-              <option value="#tab07">키오스크</option>
-              <option value="#tab08">유지보수</option>
-              <option value="#tab09">운영관리</option>
-              <option value="#tab10">유지보수</option>
-            </select>
-          </div> -->
-          <div id="tab01" class="tab-contents">
-            <form action="#">
-              <div class="c-name" data-aos="fade-up">
-                <input type="text" name="c-name">
-                <label for="c-name">회사명 / 이름</label>
+        <div class="request-form">
+          <form>
+            <div class="c-name" data-aos="fade-up">
+              <input type="text" name="c-name" required>
+              <label for="c-name">회사명 / 이름</label>
+              <span class="focus-border"></span>
+            </div>
+            <div class="c-number" data-aos="fade-up">
+              <input type="text" name="c-number" required>
+              <label for="c-number">핸드폰 번호</label>
+              <span class="focus-border"></span>
+            </div>
+            <div class="c-mail" data-aos="fade-up">
+              <input type="email" name="c-mail" required>
+              <label for="c-mail">이메일 주소</label>
+              <span class="focus-border"></span>
+            </div>
+            <div class="c-content" data-aos="fade-up">
+              <textarea name="c-content" required></textarea>
+              <label for="c-content">문의하실 내용을 입력해 주세요!</label>
+              <img src="../images/request_icon.png" alt="">
+              <span class="focus-border"></span>
+            </div>
+            <div class="attachment" data-aos="fade-up">
+              <input type="text" id="file-name" class="file-input-textbox" required>
+              <label for="file-name">파일첨부</label>
+              <div class="file-input-box">
+                <img src="../images/icon-attachment.png" alt="open" class="flie-input-img-btn">
+                <input type="file" name="flie_1" class="file-input-hidden" onchange="javascript: document.getElementById('file-name').value=this.value">
               </div>
-              <div class="c-number" data-aos="fade-up">
-                <input type="text" name="c-number">
-                <label for="c-number">핸드폰 번호</label>
-              </div>
-              <div class="c-mail" data-aos="fade-up">
-                <input type="email" name="c-mail">
-                <label for="c-mail">이메일 주소</label>
-              </div>
-              <div class="c-content" data-aos="fade-up">
-                <textarea name="c-content"></textarea>
-                <label for="c-content">문의하실 내용을 입력해 주세요!</label>
-                <img src="../images/request_icon.png" alt="">
-              </div>
-              <div class="attachment" data-aos="fade-up">
-                <input type="text" id="file-name" class="file-input-textbox" readonly>
-                <label for="file-name">파일첨부</label>
-                <div class="file-input-box">
-                  <img src="../images/icon-attachment.png" alt="open" class="flie-input-img-btn">
-                  <input type="file" name="flie_1" class="file-input-hidden" onchange="javascript: document.getElementById('file-name').value=this.value">
-                </div>
-              </div>
-              <div class="submit" data-aos="fade-up">
-                <input type="submit" value="전달하기">
-              </div>
-            </form>
-          </div>
-          <!-- <div id="tab02" class="tab-contents">
-            <h2>Tab 2</h2>
-          </div>
-          <div id="tab03" class="tab-contents">
-            <h2>Tab 3</h2>
-          </div>
-          <div id="tab04" class="tab-contents">
-            <h2>Tab 4</h2>
-          </div>
-          <div id="tab05" class="tab-contents">
-            <h2>Tab 5</h2>
-          </div>
-          <div id="tab06" class="tab-contents">
-            <h2>Tab 6</h2>
-          </div>
-          <div id="tab07" class="tab-contents">
-            <h2>Tab 7</h2>
-          </div>
-          <div id="tab08" class="tab-contents">
-            <h2>Tab 8</h2>
-          </div>
-          <div id="tab09" class="tab-contents">
-            <h2>Tab 9</h2>
-          </div>
-          <div id="tab10" class="tab-contents">
-            <h2>Tab 10</h2>
-          </div> -->
+            </div>
+            <div class="submit" data-aos="fade-up">
+              <input type="submit" value="전달하기">
+            </div>
+          </form>
         </div>
       </div><!--  class="request-box" -->
     </div><!--  class="inner" -->
