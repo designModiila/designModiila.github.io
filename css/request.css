@@ -3,7 +3,7 @@
 .top-con{margin-bottom: 70px; /*background: url(../images/requestbg.png) no-repeat right bottom;*/ position: relative;}
 .top-con img{position: absolute; right: 0; bottom: 0; z-index: -1;}
 .top-con .main-title{margin-bottom: 90px;}
-.request-box{padding-left: 25%;}
+.request-box{padding-left: 25%; margin-bottom: 200px;}
 input:valid ~ label, textarea:valid ~ label, input:focus ~ label, textarea:focus ~ label{font-size: 14px; color: #fb0033; top: -40px; transition: all 0.125s cubic-bezier(0.2, 0, 0.03, 1)}
 .request-form > form div{width: 100%; position: relative; margin-bottom: 50px;}
 .request-form label{color: #999; padding: 10px 5px; position: absolute; top: 0; left: 0; transition: all 0.25s cubic-bezier(0.2, 0, 0.03, 1); pointer-events: none;}
@@ -19,7 +19,7 @@ textarea{width: 100%; height: 100%; box-sizing: border-box; resize: none; border
 .request-form .attachment .file-input-box{width: 5%; position: relative; margin-bottom: 0;}
 .request-form .attachment .file-input-box img{display: block; margin: 0 auto;}
 .request-form .file-input-hidden{position: absolute; right: 0px; top: 0px; opacity: 0;}
-.request-form .submit{text-align: center; padding-top: 40px;}
+.request-form .submit{text-align: center; padding-top: 40px; margin-bottom: 0;}
 .request-form .submit input{width: 200px; height: 60px; background: #fff; color: #222; font-weight: 700; font-size: 20px; transition: all 0.4s ease; border: 1px solid #222; border-radius: 5px;}
 .request-form .submit input:hover{background: #fb0033; color: #fff; border: 1px solid #fb0033;}
 
