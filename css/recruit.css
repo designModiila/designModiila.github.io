@@ -66,6 +66,12 @@
 @media screen and (max-width: 1220px) {
 	.top-bg{width: 70%;}
 	.top-bg img:first-child{max-width: 100%;}
+  .top-bg .bg-wrap img:nth-child(2){position: absolute; left: 100px; bottom: 70px;}
+  .top-bg .bg-wrap img:nth-child(3){position: absolute; right: 30px; top: 20px;}
+  .top-bg .bg-wrap img:nth-child(4){position: absolute; right: 80px; top: 60px;}
+  .top-bg .bg-wrap img:nth-child(5){position: absolute; left: 120px; bottom: 30px;}
+  .top-bg .bg-wrap img:nth-child(6){position: absolute; right: 10px; top: 100px;}
+
 
 }
 @media screen and (max-width: 1023px) {
