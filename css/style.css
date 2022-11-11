@@ -72,6 +72,7 @@ section .l-txt-box .date .icon-go_web{display: inline-block; width: 13px; height
 	.section .l-txt-box .date{font-size: 16px; margin-top: 19px; line-height: normal;}
 	.section .l-txt-box .txt{font-size: 16px; color: #666; margin-top: 19px;}
 	.section .l-txt-box .txt br{display: none;}
+	section .contents{flex-direction: column;}
 	section.full5 .contents {display: flex; align-items: flex-end; flex-direction: column-reverse;}
 	section.full5 .contents .l-txt-box{display: flex; flex-direction: column;}
 	section.full5 .l-txt-box .title{font-size: 22px; margin-bottom: 30px;}
