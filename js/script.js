@@ -9,81 +9,59 @@ $(function (){
   $('#toggle').click(function () {
     $('#toggle .bar').toggleClass('animate');
     $('#menu-page').toggleClass('overlay');
-    $('body').on('scroll touchmove mousewheel', function(event) {
-      event.preventDefault();
-      event.stopPropagation();
-      return false;
-    });
+
+    if($('#toggle .bar').hasClass('animate') === true){
+      $('body').on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      });
+    }else{
+      $('body').off('scroll touchmove mousewheel');
+    }
   });
 
   $('.main-title').addClass('on');
 
-  $(document).on('click','.privacy',function(){
-    $('#pop_bg').fadeIn();
-    $('#foot_popup').fadeIn();
-    $('body').on('scroll touchmove mousewheel', function(event) {
-      event.preventDefault();
-      event.stopPropagation();
-      return false;
+
+  function popup() {
+	//레이어팝업
+    var bg = $("#pop_bg");
+
+    $(document).on('click','.popup-close, #pop_bg',function(){
+      $('#pop_bg').hide();
+      $('#foot_popup').hide();
+
+      $('body').off('scroll touchmove mousewheel');
     });
-  });
 
+    $(document).on('click','.privacy',
+      function () {
+      var ClassName = $(this).data('link');
 
+      bg.show();
+      $('#foot_popup').show();
+      $('#foot_popup').html(
+        '<div class="popup-close"><img src="../images/popup_close_icon.png" alt="close" class="close"></div>'+
+        '<div class="pri_inner"></div>'
+      );
 
-  $(document).on('click','.popup-close, #pop_bg',function(){
-    $('#pop_bg').hide();
-    $('#foot_popup').hide();
-  });
+      $('body').on('scroll touchmove mousewheel', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+      });
 
-  // function popup() {
+      //foot 메뉴 클릭시
+      switch (ClassName) {
+        case "privacy1":
+          $("#foot_popup div.pri_inner").load("../html/privacy.html");
+        break;
+      }
+    }); //click
+  }
 
-  //   //레이어팝업
-  //   var bg = $("#bg");
-  
-  //   $(document).on('click',' #bg, .popup-close ', function () {
-  //     bg.fadeOut();
-  //     $('div[id*="-popup"] div.inner').html('');
-  //     $('div[id*="-popup"]').hide();
-  
-  //     $('#foot_popup div.inner').html('');
-  //     $('#foot_popup').hide();
-  
-  //     $('body').off('scroll touchmove mousewheel');
-  //   });
-  
-  //   $(document).on('click','.privacy-btn',
-  //     function () {
-  //     var ClassName = $(this).data('link');
-  
-  //     bg.show();
-  //     $('#foot_popup').show();
-  //     $('#foot_popup').html(
-  //       '<div class="popup-close"><img src="/images/common/popup_close_icon.png" alt="close" class="close"></div>'+
-  //       '<div class="inner"></div>'
-  //     );
-  
-  //     //foot 메뉴 클릭시
-  //     switch (ClassName) {
-  //       case "email1":
-  //         $("#foot_popup div.inner").load("/_email1.php");
-  //       break;
-  //       case "privacy1":
-  //         $("#foot_popup div.inner").load("/_privacy1.php");
-  //       break;
-  //     }
-  
-  //     $('body').on('scroll touchmove mousewheel', function(event) {
-  //       event.preventDefault();
-  //       event.stopPropagation();
-  //       return false;
-  //     });
-  
-  //   }); //click
-  
-  // }
-  
-  // popup();
-
+  popup();
 
   function textMotion(){
     $.each($(".container p"), function(i, v){
@@ -107,26 +85,27 @@ $(function (){
     TweenMax.staggerFromTo($(".l-txt-box .date"), 0, {opacity:0}, {opacity: 0, ease: Power1.easeInOut});
   }
 
-
-  $('#fullpage').fullpage({
-    //options here
-    navigation: true,
-    slidesToSections: true,
-    scrollingSpeed: 850,
-    afterLoad: function(anchorLink, index, direction){
-      TweenMax.staggerFromTo($('header'), 0.5, {opacity: 0}, {opacity: 1, delay:0.3, ease: Power1.easeInOut})
-      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 1, x: '0%',delay:0.3, ease: Power1.easeInOut});
-			TweenMax.staggerFromTo($(".scroll-btn"), 0.8, {opacity: 0,}, {opacity: 1, delay:0.5, ease: Power1.easeInOut});
-      if (index == 5){
-        $('.scroll-btn').css('display','none');
+  $(document).ready(function() {
+    $('#fullpage').fullpage({
+      //options here
+      navigation: true,
+      slidesToSections: true,
+      scrollingSpeed: 850,
+      afterLoad: function(anchorLink, index, direction){
+        TweenMax.staggerFromTo($('header'), 0.5, {opacity: 0}, {opacity: 1, delay:0.3, ease: Power1.easeInOut})
+        TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 1, x: '0%',delay:0.3, ease: Power1.easeInOut});
+        TweenMax.staggerFromTo($(".scroll-btn"), 0.8, {opacity: 0,}, {opacity: 1, delay:0.5, ease: Power1.easeInOut});
+        if (index == 5){
+          $('.scroll-btn').css('display','none');
+        }
+      },
+      onLeave: function(){
+        TweenMax.staggerFromTo($("header"), 0.8, {opacity: 0}, {opacity: 0, ease: Power1.easeOut});
+        TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 0, x: '0%', ease: Power1.easeOut});
+        TweenMax.staggerFromTo($(".scroll-btn"), 0, {opacity: 1}, {opacity: 0,ease: Power1.easeInOut});
+        textMotion();
+        textMotionInit();
       }
-    },
-    onLeave: function(){
-			TweenMax.staggerFromTo($("header"), 0.8, {opacity: 0}, {opacity: 0, ease: Power1.easeOut});
-      TweenMax.staggerFromTo($("#fp-nav"), 0.8, {opacity: 0, x: '0%'}, {opacity: 0, x: '0%', ease: Power1.easeOut});
-			TweenMax.staggerFromTo($(".scroll-btn"), 0, {opacity: 1}, {opacity: 0,ease: Power1.easeInOut});
-      textMotion();
-      textMotionInit();
-    }
+    });
   });
 });
