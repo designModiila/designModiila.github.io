@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0}
-html, body {width: 100%; height: 100%; margin: 0px; padding: 0px; font-family: 'Noto Sans';}
+html, body {width: 100%; height: 100%; margin: 0px; padding: 0px; font-family: 'Noto Sans'; color: #222; position: relative}
 ul, ol {list-style: none}
-a{text-decoration: none; color: #000;}
+a{text-decoration: none; color: #222;}
 img{max-width: 100%;}
 div{box-sizing: border-box;}
 .clearfix {*zoom: 1;}
@@ -34,7 +34,7 @@ a:hover .arrow:after{opacity: 1;}
 
 
 /* .main-title{font-weight: 900; color: #000; text-transform: uppercase;} */
-.main-title{font-weight: 900; color: #000; text-transform: uppercase; overflow: hidden;}
+.main-title{font-weight: 900; color: #222; text-transform: uppercase; overflow: hidden;}
 .main-title > span{display: inline-block; transform: translate(0,100%); transition: transform 1s; letter-spacing: -1rem;}
 .main-title > span:nth-of-type(2){transition-delay:.05s}
 .main-title > span:nth-of-type(3){transition-delay:.1s}
@@ -48,17 +48,44 @@ a:hover .arrow:after{opacity: 1;}
 .main-title > span:nth-of-type(11){transition-delay:.5s}
 .main-title > span:nth-of-type(12){transition-delay:.55s}
 .main-title > span:nth-of-type(13){transition-delay:.6s}
+.main-title > span:nth-of-type(14){transition-delay:.65s}
+.main-title > span:nth-of-type(15){transition-delay:.7s}
+.main-title > span:nth-of-type(16){transition-delay:.75s}
 .main-title.on > span{transform: translate(0,0);}
 
-.sub-title{font-weight: 700; color: #000;}
+.sub-title{font-weight: 700; color: #222;}
 
 .header{position: fixed; width: 100%; z-index: 1000;}
 .header h1{font-size: 0; padding-top: 50px; padding-left: 50px;}
 
 .footer{width: 100%; border-top: 1px solid #222; position: relative;}
-.footer .mfooter{width: 100%; text-align: center; color: #222; padding: 25px 0; display: block;}
+.footer .f-wrap{padding: 50px;}
+.footer .f-wrap .f-info-wrap{display: flex; flex-direction: column;}
+.f-info-wrap .f-logo{margin-bottom: 50px; display: inline-block;}
+.f-info-wrap .f-logo a{display: block;}
+.f-info-wrap .f-info .f-top{margin-bottom: 10px;}
+.f-info-wrap .f-info .f-top dl{display: flex; margin-bottom: 5px; font-size: 13px; font-weight: 300;}
+.f-info-wrap .f-info .f-top dl dt{margin-right: 5px;}
+.f-info-wrap .f-info .f-top dl:last-child{margin-bottom: 0;}
+.f-info-wrap .f-info .f-top dl:last-child dt{margin-right: 0px;}
+.f-info-wrap .f-info .f-bottom{display: flex; justify-content: space-between; align-items: center;}
+.f-info-wrap .f-info .f-bottom .f-bottom-wrap{display: flex;}
+.f-info-wrap .f-info .f-bottom .copy{font-size: 13px; font-weight: 300; color: #999; margin-right: 20px;}
+.f-info-wrap .f-info .f-bottom .privacy{font-size: 13px; font-weight: 300;}
+.f-info-wrap .f-info .f-bottom .privacy a{display: inline-block; color: #999;}
+/* .footer .mfooter{width: 100%; text-align: center; color: #222; padding: 25px 0; display: block;}
 .footer .mfooter span{display: inline-block;}
-.footer img{padding: 15px 15px 0; display: block; position: absolute; right: 0; top: 0;}
+.footer img{padding: 15px 15px 0; display: block; position: absolute; right: 0; top: 0;} */
+
+/* foot_pop */
+#pop_bg{position: fixed; left: 0; top: 0; width:100%; height: 100%; background: rgba(0,0,0,0.7); display: none; z-index: 1001;}
+#foot_popup{position: fixed; top: 53%; left: 50%; transform: translate(-50%,-50%); background: #fff; width: 94%; max-width: 1400px; z-index: 1001; display: none; border-radius: 5px;}
+#foot_popup .popup-close{position: absolute; top: -90px; right: 0; width: 70px; height: 70px; border-radius: 50%; background: #fb0033; text-align: center; line-height: 75px; cursor: pointer;}
+#foot_popup .inner{padding: 60px 50px; box-sizing:  border-box;}
+#foot_popup .inner strong.tit{display: block; text-align: center; font-size: 32px; color: #000; margin-bottom: 30px;}
+#foot_popup .inner .pre_wrap {background: #ececee; max-height: 55vh; overflow: auto; padding: 50px; border-radius: 5px;}
+#foot_popup .inner .pre_wrap p{margin: 5px 0;}
+
 
 /*토글메뉴*/
 #toggle {position: absolute; top: 50px; right: 50px; width: 30px; height: 21px; cursor: pointer; z-index: 1000; box-sizing: unset;}
@@ -67,11 +94,12 @@ a:hover .arrow:after{opacity: 1;}
 #toggle div.bar:before {content: " "; position: absolute; bottom: 9px; transition: bottom 0.3s 0.3s ease, transform 0.3s ease;}
 #toggle div.bar:after {content: " "; position: absolute; top: 9px; transition: top 0.3s 0.3s ease, transform 0.3s ease;}
 
+
 /* 토글 Animation */
 #toggle div.bar.animate {background: rgba(255, 255, 255, 0);}
 #toggle div.bar.animate:after {top: 0; transform: rotate(45deg); transition: top 0.3s ease, transform 0.3s 0.3s ease; background: #fff;}
 #toggle div.bar.animate:before {bottom: 0; transform: rotate(-45deg); transition: bottom 0.3s ease, transform 0.3s 0.3s ease; background: #fff;}
-#overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 0; overflow: hidden; transition: all 0.3s ease, max-height 0s 0.6s ease; z-index: 100; opacity: 1; background: #000;}
+#overlay {position: fixed; top: 0; right: 0; left: 0; bottom: 0; max-height: 0; overflow: hidden; transition: all 0.3s ease, max-height 0s 0.6s ease; z-index: 100; opacity: 1; background: #3a3a3a;}
 #overlay nav {width: 100%; height: 100%; overflow: hidden; display: flex; flex-direction: column; justify-content: space-evenly; padding-left: 200px;}
 #overlay nav ul, #overlay nav ul li {margin: 0; padding: 0; display: block; position: static;}
 #overlay nav ul li {opacity: 0; transition: all 0.9s 0s ease; margin-left: 60px;}
@@ -106,11 +134,8 @@ section .fp-tableCell{overflow:hidden; background: #ececee;}
 section *{box-sizing:border-box;}
 section .contents{position:relative;width: 100%;height: 100%; z-index: 10;}
 /*section 전환 */
-section.fadeout .fp-tableCell{opacity:0.3; transition:0.4s;}
-section:not(.fp-auto-height) .inner_center{padding-top: 80px;}
-section:not(.fp-auto-height,.fadeout) .fp-tableCell{transform: scale(0.88) translateY(0%);transition: 0.3s;}
-section.active:not(.fp-auto-height) .fp-tableCell{transform: scale(1) translateY(0%);border-radius:0;transition: 1s 0.8s;}
-section.dark .contents:before, section.dark .contents:after{border-color:rgba(0,0,0,0.15);}
+section:not(.full5,.fadeout) .fp-tableCell{transform: scale(0.88) translateY(0%);transition: 0.3s;}
+section.active:not(.full5) .fp-tableCell{transform: scale(1) translateY(0%);border-radius:0;transition: 1s 0.8s;}
 
 #fp-nav{position: fixed; top: 50%; left: 0; width: 104px; display: flex; flex-wrap: wrap; justify-content: center; z-index: 100;}
 #fp-nav ul{position: relative;}
@@ -132,4 +157,17 @@ section.dark .contents:before, section.dark .contents:after{border-color:rgba(0,
   #overlay nav{display: flex; flex-direction: column; justify-content: space-evenly; padding: 0 20px;}
   #overlay .company-info{padding-top: 0;}
   #overlay nav ul li a{height: 50px; font-size: 40px;}
+  .footer .f-wrap{padding: 30px 20px;}
+  .f-info-wrap .f-logo{margin-bottom: 30px;}
+  .f-info-wrap .f-info .f-top{margin-bottom: 15px;}
+  .f-info-wrap .f-info .f-bottom .f-bottom-wrap{flex-direction: column;}
+  .f-info-wrap .f-info .f-bottom .copy{margin-bottom: 5px;}
+
+  #foot_popup .inner{padding: 30px 15px;}
+  #foot_popup .inner strong.tit{font-size: 18px; margin-bottom: 15px;}
+  #foot_popup .inner .pre_wrap{padding: 15px 20px;}
+  #foot_popup .inner .pre_wrap p{font-size: 14px !important;}
+  #foot_popup .inner .pre_wrap span{font-size: 14px !important;}
+  #foot_popup .popup-close{top: -60px; width: 45px; height: 45px; line-height: 50px;}
+
 }
