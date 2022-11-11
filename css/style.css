@@ -15,7 +15,7 @@ body{overflow: hidden;}
 
 body,#wrap{background:#0c0c0c;}
 .section{width: 100%; height: 937px; position: relative;}
-.section .l-txt-box{position: relative; width: 85%; padding-top: 250px; padding-left: 200px;}
+.section .l-txt-box{position: relative; padding-left: 200px;}
 .section .l-txt-box .container{margin: 0 auto; position: relative; overflow: hidden;}
 .section .l-txt-box .container{font-size: 70px; font-weight: 900; color: #222;}
 .section .l-txt-box .container p{position: relative;}
@@ -33,9 +33,9 @@ section .l-txt-box .date .icon-go_web{display: inline-block; width: 13px; height
 .section.full2 .fullBg{position: absolute; right: 0; top: 20%;}
 .section.full3 .fullBg{position: absolute; right: 0;}
 .section.full4 .fullBg{position: absolute; right: 0;}
-.section.full5 .fullBg{position: absolute; right: -130px; bottom: -18px; z-index: -1;}
-.section.full5 .contents{display: flex; flex-direction: column; justify-content: flex-end; align-items: center;}
-.full5 .l-txt-box{padding-top: 0px; padding-left: 0; display: flex; flex-direction: column;}
+.section.full5 .fullBg{position: absolute; right: 0px; bottom: 0px; z-index: -1;}
+/* .section.full5 .contents{display: flex; flex-direction: column; justify-content: flex-end; align-items: center;} */
+/* .full5 .l-txt-box{padding-top: 0px; padding-left: 0; display: flex; flex-direction: column;} */
 .full5 .l-txt-box .title{font-size: 50px; line-height: inherit; margin-bottom: 50px;}
 .full5 .l-txt-box .title span{display: inline-block; position: relative;}
 .full5 .l-txt-box .title span::after{position: absolute; content: ''; display: block; width: 100%; height: 5px; background: #fb0033; left: 0; bottom: 1px;}
@@ -49,6 +49,7 @@ section .l-txt-box .date .icon-go_web{display: inline-block; width: 13px; height
 }
 @media screen and (max-width: 1023px) {
 	/* Tablet */
+	.section .l-txt-box{padding-left: 100px;}
 	.section.full5 .fullBg{opacity: 0.4;}
 }
 @media screen and (max-width:767px){ 
@@ -61,7 +62,8 @@ section .l-txt-box .date .icon-go_web{display: inline-block; width: 13px; height
 	.section.full2 .fullBg{position: unset;}
 	.section.full3 .fullBg{position: unset;}
 	.section.full4 .fullBg{position: unset;}
-	.section.full5 .fullBg{z-index: -1; height: unset; bottom: -10px; right: 0; opacity: 0.4;}
+	.section.full5 .fullBg{position: unset; height: auto; opacity: 1;}
+	.section.full5 .fullBg img{height: auto;}
 	.full2 .fullBg img{object-position: 77% center;}
 	/* .section .l-txt-box{padding-top: 20px; padding-left: 49px; display: flex; flex-direction: column; justify-content: space-around;} */
 	.section .l-txt-box{padding-left: 0; padding-top: 0; width: 100%; padding: 20px 40px;}
@@ -70,10 +72,10 @@ section .l-txt-box .date .icon-go_web{display: inline-block; width: 13px; height
 	.section .l-txt-box .date{font-size: 16px; margin-top: 19px; line-height: normal;}
 	.section .l-txt-box .txt{font-size: 16px; color: #666; margin-top: 19px;}
 	.section .l-txt-box .txt br{display: none;}
-	section.full5 .contents{display: flex; flex-direction: column-reverse; justify-content: space-around;}
+	section.full5 .contents {display: flex; align-items: flex-end; flex-direction: column-reverse;}
+	section.full5 .contents .l-txt-box{display: flex; flex-direction: column;}
 	section.full5 .l-txt-box .title{font-size: 22px; margin-bottom: 30px;}
 	.full5 .l-txt-box .go-box a{font-size: 18px;}
-	.full5 .l-txt-box .go-box{margin-bottom: 0px;}
 	.scroll-btn{display: none;}
 
 }
