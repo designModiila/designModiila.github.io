@@ -5,3 +5,12 @@
 #foot_popup .pri_inner strong.tit{display: block; text-align: center; font-size: 32px; color: #000; margin-bottom: 30px;}
 #foot_popup .pri_inner .pri_wrap {background: #ececee; max-height: 55vh; overflow: auto; padding: 50px; border-radius: 5px;}
 #foot_popup .pre_inner .pri_wrap p{margin: 5px 0;}
+
+@media screen and (max-width:767px){
+  #foot_popup .pri_inner{padding: 30px 15px;}
+  #foot_popup .pri_inner strong.tit{font-size: 18px; margin-bottom: 15px;}
+  #foot_popup .pri_inner .pri_wrap{padding: 15px 20px;}
+  #foot_popup .pri_inner .pri_wrap p{font-size: 14px !important;}
+  #foot_popup .pri_inner .pri_wrap span{font-size: 14px !important;}
+  #foot_popup .popup-close{top: -60px; width: 45px; height: 45px; line-height: 50px;}
+}

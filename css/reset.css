@@ -162,12 +162,4 @@ section.active:not(.full5) .fp-tableCell{transform: scale(1) translateY(0%);bord
   .f-info-wrap .f-info .f-top{margin-bottom: 15px;}
   .f-info-wrap .f-info .f-bottom .f-bottom-wrap{flex-direction: column;}
   .f-info-wrap .f-info .f-bottom .copy{margin-bottom: 5px;}
-
-  #foot_popup .inner{padding: 30px 15px;}
-  #foot_popup .inner strong.tit{font-size: 18px; margin-bottom: 15px;}
-  #foot_popup .inner .pre_wrap{padding: 15px 20px;}
-  #foot_popup .inner .pre_wrap p{font-size: 14px !important;}
-  #foot_popup .inner .pre_wrap span{font-size: 14px !important;}
-  #foot_popup .popup-close{top: -60px; width: 45px; height: 45px; line-height: 50px;}
-
 }
